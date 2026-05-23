@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "public incident response",
+  "type": "object",
+  "required": ["stored", "incident", "status"],
+  "properties": {
+    "stored": {"type": "boolean"},
+    "incident": {"type": "object"},
+    "status": {"type": "object"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Phase 15 Payment Readiness Report Response",
+  "type": "object",
+  "required": ["report_id", "payment_readiness_gate", "payment_metrics", "decision"],
+  "additionalProperties": true
+}

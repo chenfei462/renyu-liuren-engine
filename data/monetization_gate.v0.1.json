@@ -1,0 +1,6 @@
+{
+  "gate_id": "monetization_gate.v0.1",
+  "gate_status": "blocked",
+  "blocked_reasons": ["productization_not_active"],
+  "next_step": "return_to_productization_fix"
+}

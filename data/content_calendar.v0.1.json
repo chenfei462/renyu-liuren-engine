@@ -1,0 +1,51 @@
+{
+  "calendar_id": "content_calendar.v0.1",
+  "phase": "phase10_growth_ops",
+  "items": [
+    {
+      "content_id": "CC-001",
+      "column": "一分钟懂三传",
+      "title": "三传为什么是排盘里的时间线",
+      "summary": "用低风险学习语言解释初传、中传、末传的结构作用，关联排盘事实，不做现实结论。",
+      "linked_learning_card_ids": ["LC-003"],
+      "linked_source_ids": ["RC-044", "RC-045"],
+      "status": "draft"
+    },
+    {
+      "content_id": "CC-002",
+      "column": "天将电台",
+      "title": "贵人、青龙、天空如何只作象意提示",
+      "summary": "展示十二天将角色化表达的边界，强调娱乐和学习用途。",
+      "linked_learning_card_ids": ["LC-004"],
+      "linked_source_ids": ["RC-067", "RC-079"],
+      "status": "draft"
+    },
+    {
+      "content_id": "CC-003",
+      "column": "古籍拆读",
+      "title": "出处卡怎样变成可审校规则",
+      "summary": "说明出处卡、规则 ID、现代摘要和专家复核之间的关系。",
+      "linked_learning_card_ids": ["LC-001"],
+      "linked_source_ids": ["RC-001", "RC-045"],
+      "status": "draft"
+    },
+    {
+      "content_id": "CC-004",
+      "column": "复盘手账",
+      "title": "一次合作问题如何记录观察信号",
+      "summary": "引导测试用户记录问题、课式事实、反馈和后续观察，不提供现实处置指令。",
+      "linked_learning_card_ids": ["LC-006"],
+      "linked_source_ids": ["RC-102"],
+      "status": "draft"
+    },
+    {
+      "content_id": "CC-005",
+      "column": "直播问课夜",
+      "title": "低风险文化问答的测试脚本",
+      "summary": "整理受邀用户测试流程、模式切换和反馈入口，保留安全降级示例。",
+      "linked_learning_card_ids": ["LC-008"],
+      "linked_source_ids": ["RC-103"],
+      "status": "draft"
+    }
+  ]
+}

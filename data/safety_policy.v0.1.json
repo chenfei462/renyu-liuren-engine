@@ -1,0 +1,20 @@
+{
+  "policy_id": "safety_policy.v0.1",
+  "version": "0.1",
+  "disclaimer": "本产品为传统文化学习与娱乐体验，不构成医疗、法律、投资、职业、婚姻或安全决策建议。",
+  "risk_areas": [
+    {"risk_id": "medical", "action": "safety_only", "description": "不诊断、不判断病情、不建议用药或手术。"},
+    {"risk_id": "legal", "action": "safety_only", "description": "不预测胜诉，不提供法律策略。"},
+    {"risk_id": "investment", "action": "safety_only", "description": "不提供买卖、收益、时机或资产配置建议。"},
+    {"risk_id": "personal_safety", "action": "safety_only", "description": "不占断安全处置，建议联系紧急服务或可信赖的人。"},
+    {"risk_id": "privacy", "action": "block_or_reframe", "description": "不窥探、跟踪、识别或公开他人隐私。"},
+    {"risk_id": "manipulation", "action": "block_or_reframe", "description": "不帮助操控关系、胁迫他人或侵犯边界。"},
+    {"risk_id": "deterministic_prediction", "action": "block", "description": "不输出确定性承诺、胜率或保证。"},
+    {"risk_id": "timing_promise", "action": "block", "description": "不承诺应期或具体成败时间。"},
+    {"risk_id": "single_shensha_conclusion", "action": "block", "description": "神煞只能作辅助标签，不得单独形成结论。"}
+  ],
+  "forbidden_terms": ["必然", "一定", "保证", "准确率", "包赢", "必赚", "确诊", "用药", "胜诉", "必成", "稳赚"],
+  "required_flags": ["cultural_entertainment_disclaimer", "evidence_required_for_professional", "tool_required_for_realtime"],
+  "beta_allowed_scope": ["学习", "娱乐", "合作/谋望", "低风险沟通", "传统文化解释"],
+  "beta_blocked_scope": ["医疗诊断", "法律策略", "投资买卖", "人身安全处置", "应期承诺", "隐私窥探", "感情操控"]
+}

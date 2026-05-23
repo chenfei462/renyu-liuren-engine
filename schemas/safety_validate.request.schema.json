@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "safety validate request",
+  "type": "object",
+  "required": ["answer", "chart", "mode"],
+  "properties": {
+    "answer": {"type": "object"},
+    "chart": {"type": "object"},
+    "mode": {"type": "string", "enum": ["professional", "plain", "story", "mentor"]}
+  },
+  "additionalProperties": false
+}

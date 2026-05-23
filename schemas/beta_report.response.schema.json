@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "beta report response",
+  "type": "object",
+  "required": [
+    "report_id",
+    "beta_id",
+    "session_count",
+    "feedback_count",
+    "mode_distribution",
+    "feedback_distribution",
+    "high_risk_trigger_count",
+    "safety_block_count",
+    "manual_review_items"
+  ],
+  "properties": {
+    "report_id": {"type": "string"},
+    "beta_id": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "session_count": {"type": "integer"},
+    "feedback_count": {"type": "integer"},
+    "completion_count": {"type": "integer"},
+    "mode_distribution": {"type": "object"},
+    "feedback_distribution": {"type": "object"},
+    "high_risk_trigger_count": {"type": "integer"},
+    "safety_block_count": {"type": "integer"},
+    "failed_interface_count": {"type": "integer"},
+    "manual_review_items": {"type": "array"},
+    "allowed_scope": {"type": "object"},
+    "blocked_scope": {"type": "object"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ops report response",
+  "type": "object",
+  "required": ["report_id", "ops_id", "status", "metrics", "feedback_triage", "decision"],
+  "properties": {
+    "report_id": {"type": "string", "const": "phase9_ops_report.v0.1"},
+    "ops_id": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "status": {"type": "object"},
+    "metrics": {"type": "object"},
+    "feedback_triage": {"type": "object"},
+    "decision": {"type": "string"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,3 @@
+{"record_type":"seed","note":"Phase 7 local beta feedback JSONL. Seed row is ignored by report loader."}
+{"beta_scope_status": "blocked", "blocked_reasons": [], "category": "投资", "chart_id": "chart_96f0a0c3746756b6", "feedback_token": "fb_fb299f83a5992b50", "feedback_type": "source_insufficient", "mode": "plain", "note": "自动化页面点击测试反馈", "safety_action": "allow_cultural_interpretation", "tester_id": "anonymous", "timestamp": "2026-05-04T08:37:34Z"}
+{"blocked_reasons": [], "category": "Q-001", "feedback_type": "helpful", "mode": "plain", "note": "api smoke", "tester_id": "anonymous", "timestamp": "2026-05-04T08:40:25Z"}

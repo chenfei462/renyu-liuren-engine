@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "product metrics response",
+  "type": "object",
+  "required": ["metrics_id", "visitor_count", "learning_progress_count"],
+  "properties": {
+    "metrics_id": {"type": "string", "const": "product_metrics.v0.1"},
+    "visitor_count": {"type": "integer"},
+    "profile_count": {"type": "integer"},
+    "learning_progress_count": {"type": "integer"},
+    "completed_node_count": {"type": "integer"},
+    "returning_visitor_count": {"type": "integer"},
+    "pdf_report_draft_count": {"type": "integer"},
+    "content_click_count": {"type": "integer"},
+    "reflection_note_count": {"type": "integer"},
+    "delete_request_count": {"type": "integer"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "python scripts/prepare_vercel_public.py",
+  "functions": {
+    "app.py": {
+      "excludeFiles": "{.pytest_cache/**,.playwright-cli/**,.superpowers/**,Python/**,output/**,server-*.log,server-*.err.log,tests/**,**/__pycache__/**,**/*.pyc}"
+    }
+  }
+}

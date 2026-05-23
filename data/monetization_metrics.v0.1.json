@@ -1,0 +1,14 @@
+{
+  "metrics_id": "monetization_metrics.v0.1",
+  "event_count": 0,
+  "business_lead_count": 0,
+  "unique_visitor_count": 0,
+  "returning_visitor_count": 0,
+  "member_interest_count": 0,
+  "course_interest_count": 0,
+  "business_interest_count": 0,
+  "ip_interest_count": 0,
+  "pricing_view_count": 0,
+  "offer_click_count": 0,
+  "delete_request_count": 0
+}

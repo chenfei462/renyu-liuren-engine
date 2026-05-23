@@ -1,0 +1,12 @@
+.venv/
+.pytest_cache/
+.playwright-cli/
+.superpowers/
+Python/
+output/
+public/static/
+server-*.log
+server-*.err.log
+**/__pycache__/
+**/*.pyc
+*.egg-info/

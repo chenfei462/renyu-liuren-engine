@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Payment Metrics Response",
+  "type": "object",
+  "required": ["metrics_id", "order_count", "payment_event_count", "refund_case_count"],
+  "additionalProperties": true
+}

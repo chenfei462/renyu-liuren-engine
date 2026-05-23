@@ -1,0 +1,12 @@
+{
+  "config_id": "productization_config.v0.1",
+  "experiment_enabled": true,
+  "gate_statuses": ["blocked", "experiment", "paused"],
+  "accounts_enabled": false,
+  "payments_enabled": false,
+  "enabled_experiments": ["learning_path", "visitor_profile", "retention_metrics", "pdf_report_draft", "reflection_journal"],
+  "allowed_public_statuses": ["preview", "live"],
+  "blocked_when_public_status": ["blocked", "paused"],
+  "privacy_notice": "Anonymous visitor records, learning progress, and local report events are used only for product review.",
+  "commercial_boundary": "Commercial interest is recorded only as an event. No payment, membership entitlement, or outcome promise is enabled."
+}

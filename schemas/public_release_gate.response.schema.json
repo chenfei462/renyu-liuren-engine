@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "public release gate response",
+  "type": "object",
+  "required": ["gate_id", "gate_status", "blocked_reasons", "next_step"],
+  "properties": {
+    "gate_id": {"type": "string", "const": "public_release_gate.v0.1"},
+    "generated_at": {"type": "string"},
+    "gate_status": {"type": "string", "enum": ["blocked", "ready_for_phase12"]},
+    "blocked_reasons": {"type": "array", "items": {"type": "string"}},
+    "canary_metrics_id": {"type": "string"},
+    "release_status": {"type": ["string", "null"]},
+    "ops_status": {"type": ["string", "null"]},
+    "thresholds": {"type": "object"},
+    "next_step": {"type": "string"}
+  },
+  "additionalProperties": true
+}

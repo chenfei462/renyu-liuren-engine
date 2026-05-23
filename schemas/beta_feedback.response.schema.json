@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "beta feedback response",
+  "type": "object",
+  "required": ["stored", "feedback"],
+  "properties": {
+    "stored": {"type": "boolean"},
+    "feedback": {"type": "object"}
+  },
+  "additionalProperties": true
+}

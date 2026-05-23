@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "learning cards response",
+  "type": "object",
+  "required": ["learning_cards"],
+  "properties": {
+    "learning_cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["card_id", "title", "summary", "tags", "source_ids"]
+      }
+    }
+  },
+  "additionalProperties": false
+}

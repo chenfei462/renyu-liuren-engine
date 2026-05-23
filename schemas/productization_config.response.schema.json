@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "productization config response",
+  "type": "object",
+  "required": ["config_id", "gate_statuses", "enabled_experiments"],
+  "properties": {
+    "config_id": {"type": "string", "const": "productization_config.v0.1"},
+    "experiment_enabled": {"type": "boolean"},
+    "gate_statuses": {"type": "array", "items": {"type": "string"}},
+    "accounts_enabled": {"type": "boolean"},
+    "payments_enabled": {"type": "boolean"},
+    "enabled_experiments": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

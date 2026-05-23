@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "phase11 canary report response",
+  "type": "object",
+  "required": ["report_id", "canary_metrics", "public_release_gate", "recommendation"],
+  "properties": {
+    "report_id": {"type": "string", "const": "phase11_canary_report.v0.1"},
+    "generated_at": {"type": "string"},
+    "canary_metrics": {"type": "object"},
+    "public_release_gate": {"type": "object"},
+    "recommendation": {"type": "string"}
+  },
+  "additionalProperties": true
+}

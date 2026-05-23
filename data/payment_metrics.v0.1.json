@@ -1,0 +1,11 @@
+{
+  "metrics_id": "payment_metrics.v0.1",
+  "order_count": 0,
+  "payment_event_count": 0,
+  "refund_case_count": 0,
+  "paid_sandbox_count": 0,
+  "failed_count": 0,
+  "canceled_count": 0,
+  "refunded_count": 0,
+  "blocked_order_count": 0
+}

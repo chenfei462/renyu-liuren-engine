@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "create_liuren_interpretation tool response",
+  "type": "object",
+  "required": ["chart", "evidence", "interpretation", "safety", "latency_ms"],
+  "properties": {
+    "chart": {"type": ["object", "null"]},
+    "evidence": {"type": "array"},
+    "interpretation": {"type": "object"},
+    "safety": {"type": "object"},
+    "ops_status": {"type": "object"},
+    "public_status": {"type": "object"},
+    "canary_validation": {"type": "object"},
+    "latency_ms": {"type": "number"}
+  },
+  "additionalProperties": true
+}

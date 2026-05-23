@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "canary session request",
+  "type": "object",
+  "properties": {
+    "tester_id": {"type": ["string", "null"]},
+    "invite_code": {"type": ["string", "null"]},
+    "chart_id": {"type": ["string", "null"]},
+    "mode": {"type": "string", "enum": ["professional", "plain", "story", "mentor"]},
+    "category": {"type": ["string", "null"]},
+    "session_status": {"type": "string"},
+    "feedback_type": {"type": ["string", "null"]},
+    "safety_action": {"type": ["string", "null"]},
+    "blocked_reasons": {"type": ["array", "null"], "items": {"type": "string"}},
+    "latency_ms": {"type": ["number", "null"]},
+    "event_type": {"type": ["string", "null"]},
+    "incident_type": {"type": ["string", "null"]},
+    "note": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

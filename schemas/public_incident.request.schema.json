@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "public incident request",
+  "type": "object",
+  "properties": {
+    "event_type": {"type": "string"},
+    "severity": {"type": "string", "enum": ["P0", "P1", "P2", "P3"]},
+    "summary": {"type": "string"},
+    "chart_id": {"type": "string"},
+    "visitor_id": {"type": "string"},
+    "source": {"type": "string"},
+    "reason": {"type": "string"}
+  },
+  "additionalProperties": true
+}

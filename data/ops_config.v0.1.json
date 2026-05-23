@@ -1,0 +1,15 @@
+{
+  "ops_id": "ops_config.v0.1",
+  "release_id": "release_config.v0.1",
+  "canary_user_limit": 50,
+  "statuses": ["blocked", "canary", "paused"],
+  "critical_severities": ["P0", "P1"],
+  "status_notices": {
+    "blocked": "当前仍有发布阻断项，暂不开放受邀测试。",
+    "canary": "当前处于小范围受邀测试，仅开放低风险文化学习与娱乐体验。",
+    "paused": "当前因安全或运维事件暂停讲盘，只提供安全说明与反馈入口。"
+  },
+  "triage_statuses": ["new", "triaged", "fixed", "wont_fix", "needs_expert_review"],
+  "feedback_categories": ["safety_issue", "source_insufficient", "chart_question", "voice_issue", "confusing", "share_report_issue", "business_interest"],
+  "event_types": ["high_risk_leak", "deterministic_promise", "professional_without_evidence", "privacy_delete_request", "copyright_complaint", "realtime_tool_bypass", "api_failure", "realtime_failure", "share_report_generated", "business_interest", "manual_pause", "manual_resume"]
+}

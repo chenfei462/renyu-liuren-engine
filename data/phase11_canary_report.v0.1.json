@@ -1,0 +1,6 @@
+{
+  "report_id": "phase11_canary_report.v0.1",
+  "generated_at": "2026-04-30T00:00:00Z",
+  "recommendation": "do_not_publicly_release",
+  "notes": ["Canary starts only after expert review gate is open and invited tester validation is active."]
+}

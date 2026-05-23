@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "growth report response",
+  "type": "object",
+  "required": ["report_id", "review_gate", "growth_metrics", "recommendation"],
+  "properties": {
+    "report_id": {"type": "string", "const": "phase10_growth_report.v0.1"},
+    "generated_at": {"type": "string"},
+    "review_gate": {"type": "object"},
+    "growth_metrics": {"type": "object"},
+    "content_calendar": {"type": "object"},
+    "recommendation": {"type": "string"}
+  },
+  "additionalProperties": true
+}

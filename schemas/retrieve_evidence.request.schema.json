@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "retrieve_evidence request",
+  "type": "object",
+  "required": ["chart_json"],
+  "properties": {
+    "chart_json": {"type": "object"},
+    "query": {"type": ["string", "null"]},
+    "mode": {"type": "string", "enum": ["professional", "plain"]}
+  },
+  "additionalProperties": false
+}

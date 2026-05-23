@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "canary metrics response",
+  "type": "object",
+  "required": ["metrics_id", "session_count", "returning_tester_count", "feedback_submit_count"],
+  "properties": {
+    "metrics_id": {"type": "string", "const": "canary_metrics.v0.1"},
+    "generated_at": {"type": "string"},
+    "session_count": {"type": "integer"},
+    "unique_tester_count": {"type": "integer"},
+    "returning_tester_count": {"type": "integer"},
+    "completion_count": {"type": "integer"},
+    "story_mode_count": {"type": "integer"},
+    "mentor_mode_count": {"type": "integer"},
+    "feedback_submit_count": {"type": "integer"},
+    "share_report_count": {"type": "integer"},
+    "share_report_generated_count": {"type": "integer"},
+    "share_report_user_reach_count": {"type": "integer"},
+    "share_report_metrics": {"type": "object"},
+    "learning_card_click_count": {"type": "integer"},
+    "member_interest_count": {"type": "integer"},
+    "course_interest_count": {"type": "integer"},
+    "business_interest_count": {"type": "integer"},
+    "high_risk_leak_count": {"type": "integer"},
+    "realtime_tool_bypass_count": {"type": "integer"}
+  },
+  "additionalProperties": true
+}

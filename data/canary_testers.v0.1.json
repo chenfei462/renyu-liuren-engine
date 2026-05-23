@@ -1,0 +1,15 @@
+{
+  "canary_id": "canary_testers.v0.1",
+  "canary_user_limit": 50,
+  "notice": "受邀 canary 测试仅开放传统文化学习与娱乐体验，测试编号或邀请码通过后才可进入语音起课。",
+  "testers": [
+    {"tester_id": "T-001", "label": "internal_acceptance_01", "status": "active"},
+    {"tester_id": "T-002", "label": "internal_acceptance_02", "status": "active"},
+    {"tester_id": "T-003", "label": "internal_acceptance_03", "status": "active"}
+  ],
+  "invite_codes": [
+    {"code": "REN-YU-CANARY-001", "status": "active", "max_uses": 10},
+    {"code": "REN-YU-CANARY-002", "status": "active", "max_uses": 10},
+    {"code": "REN-YU-CANARY-003", "status": "active", "max_uses": 10}
+  ]
+}

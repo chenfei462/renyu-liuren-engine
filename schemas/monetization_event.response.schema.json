@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "monetization event response",
+  "type": "object",
+  "required": ["stored"],
+  "properties": {
+    "stored": {"type": "boolean"},
+    "event": {"type": "object"},
+    "gate": {"type": "object"},
+    "metrics": {"type": "object"},
+    "blocked_reasons": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

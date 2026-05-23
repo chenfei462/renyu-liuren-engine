@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "legal document response",
+  "type": "object",
+  "required": ["document_id", "kind", "title", "content", "format"],
+  "properties": {
+    "document_id": {"type": "string"},
+    "kind": {"type": "string"},
+    "title": {"type": "string"},
+    "content": {"type": "string"},
+    "format": {"type": "string", "const": "markdown"}
+  },
+  "additionalProperties": true
+}

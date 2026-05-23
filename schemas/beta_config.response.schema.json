@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "beta config response",
+  "type": "object",
+  "required": ["beta_id", "status", "tester_notice", "allowed_modes", "allowed_categories", "blocked_categories"],
+  "properties": {
+    "beta_id": {"type": "string", "const": "beta_config.v0.1"},
+    "status": {"type": "string"},
+    "tester_notice": {"type": "string"},
+    "share_report_notice": {"type": "string"},
+    "allowed_modes": {"type": "array", "items": {"type": "string"}},
+    "allowed_categories": {"type": "array", "items": {"type": "string"}},
+    "blocked_categories": {"type": "array", "items": {"type": "string"}},
+    "feedback_types": {"type": "array"},
+    "blocked_scope_notes": {"type": "array", "items": {"type": "string"}},
+    "exit_conditions": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

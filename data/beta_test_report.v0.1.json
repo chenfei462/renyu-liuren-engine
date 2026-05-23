@@ -1,0 +1,10 @@
+{
+  "report_id": "beta_test_report.v0.1",
+  "beta_id": "beta_config.v0.1",
+  "status": "initial",
+  "session_count": 0,
+  "feedback_count": 0,
+  "high_risk_trigger_count": 0,
+  "safety_block_count": 0,
+  "manual_review_items": []
+}

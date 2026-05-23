@@ -1,0 +1,5 @@
+{"record_type":"seed","note":"phase10 growth events are appended as sanitized JSONL records"}
+{"event_id": "growth_7453740", "event_type": "member_interest", "mode": "mentor", "source": "realtime_frontend", "tester_id": "anonymous", "timestamp": "2026-05-04T08:37:29Z"}
+{"event_id": "growth_7330892", "event_type": "member_interest", "mode": "plain", "note": "api smoke", "source": "api_smoke", "tester_id": "anonymous", "timestamp": "2026-05-04T08:40:41Z"}
+{"event_id": "growth_3516905", "event_type": "member_interest", "invite_code": null, "mode": "plain", "source": "realtime_frontend", "tester_id": "anonymous", "timestamp": "2026-05-12T02:41:07Z"}
+{"event_id": "growth_7571502", "event_type": "member_interest", "invite_code": null, "mode": "plain", "source": "realtime_frontend", "tester_id": "anonymous", "timestamp": "2026-05-12T08:09:56Z"}

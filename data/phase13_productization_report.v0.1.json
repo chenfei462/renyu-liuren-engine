@@ -1,0 +1,6 @@
+{
+  "report_id": "phase13_productization_report.v0.1",
+  "decision": "do_not_start_productization",
+  "blocked_review_list": ["public_mvp_not_active"],
+  "next_step": "return_to_phase12_fix"
+}

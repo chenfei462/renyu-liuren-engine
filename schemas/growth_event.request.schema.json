@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "growth event request",
+  "type": "object",
+  "required": ["event_type"],
+  "properties": {
+    "tester_id": {"type": ["string", "null"]},
+    "event_type": {"type": "string"},
+    "mode": {"type": ["string", "null"]},
+    "content_id": {"type": ["string", "null"]},
+    "chart_id": {"type": ["string", "null"]},
+    "source": {"type": ["string", "null"]},
+    "note": {"type": ["string", "null"]},
+    "category": {"type": ["string", "null"]},
+    "feedback_token": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

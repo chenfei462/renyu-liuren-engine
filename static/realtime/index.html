@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>壬语实时解读工作台</title>
+    <meta
+      name="description"
+      content="澹语 · 大六壬实时解读工作台，提供具体事项文字起课、语音体验、学习卡、出处卡和本地分享报告。"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1e3a8a" />
+    <link rel="canonical" href="/app" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta property="og:title" content="澹语 · 大六壬工作台" />
+    <meta
+      property="og:description"
+      content="用于传统文化学习与娱乐体验的实时解读工作台，不构成现实决策建议。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/app" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="stylesheet" href="/static/realtime/styles.css?v=clickability-2" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-topbar">
+        <div>
+          <p class="eyebrow">受限最小可用版</p>
+          <h1 class="brand-mark">澹语 · 大六壬</h1>
+        </div>
+        <nav class="app-nav" aria-label="应用导航">
+          <a href="#questionPanel" aria-current="page">起课</a>
+          <a href="#learningPathPanel">学习闯关</a>
+          <a href="#feedbackPanel">反馈</a>
+          <a href="#experimentsPanel">更多</a>
+        </nav>
+        <div class="language-switcher" data-language-switcher>
+          <button class="language-trigger" type="button" aria-haspopup="true" aria-expanded="false">
+            <span class="language-region" data-language-region>中</span>
+            <span data-language-current>中文</span>
+            <span class="language-chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="language-menu" hidden>
+            <button type="button" data-language-option="zh">中文</button>
+            <button type="button" data-language-option="en">英文</button>
+          </div>
+        </div>
+        <div class="status-card" aria-live="polite">
+          <span>当前状态</span>
+          <strong id="status" class="status">空闲</strong>
+        </div>
+      </header>
+
+      <section class="safety-banner" aria-label="安全边界">
+        <div>
+          <strong>文化学习体验，不构成现实建议。</strong>
+          <span>公开体验不保存录音；反馈、课式和删除请求仅用于产品复盘。</span>
+        </div>
+        <div class="legal-links" aria-label="最小可用版范围说明">
+          <a href="/">发布入口</a>
+          <a href="/api/legal/privacy">隐私政策</a>
+          <a href="/api/legal/safety">安全边界</a>
+          <a href="/api/legal/copyright">版权说明</a>
+        </div>
+      </section>
+
+      <section id="betaNotice" class="notice compact-notice">
+        受限内测：传统文化学习与娱乐体验，不构成现实建议。
+      </section>
+      <section id="opsPauseNotice" class="notice compact-notice hidden">
+        当前运维状态暂停讲盘，仅提供安全说明与反馈入口。
+      </section>
+      <section id="publicFeedbackNotice" class="notice compact-notice">
+        公开最小可用版状态读取中。公开体验不保存录音；反馈、课式和删除请求仅用于产品复盘。
+      </section>
+
+      <section class="workbench">
+        <div class="primary-column">
+          <section id="questionPanel" class="panel question-panel" aria-label="文字解读">
+            <div class="section-heading">
+              <p class="eyebrow">本次占问</p>
+              <h2>输入一个具体事项</h2>
+              <p>例如出行、合作、学习安排等；不回答天气、新闻、百科、计算或闲聊问题。</p>
+            </div>
+            <label class="field-label" for="textQuestion">
+              文字起课 <span class="muted">只用于具体事项占问</span>
+            </label>
+            <textarea id="textQuestion" placeholder="例如：明天出行是否顺利？这个合作能不能推进？"></textarea>
+            <div class="control-grid">
+              <label class="mode-control" for="modeSelect">
+                解读口吻
+                <select id="modeSelect">
+                  <option value="professional">专业</option>
+                  <option value="plain" selected>白话</option>
+                  <option value="story">故事</option>
+                  <option value="mentor">导师</option>
+                </select>
+              </label>
+              <div class="voice-controls" aria-label="语音控制">
+                <button id="connectBtn" type="button">连接</button>
+                <button id="disconnectBtn" type="button" disabled>断开</button>
+                <button id="interruptBtn" type="button" disabled>打断</button>
+              </div>
+              <button id="runTextInterpretBtn" class="primary-action" type="button">开始起课</button>
+            </div>
+            <p id="textInterpretStatus" class="form-status muted">不回答天气、新闻、百科、计算或闲聊问题。</p>
+          </section>
+
+          <article id="resultPanel" class="panel result-card">
+            <div class="section-heading result-heading">
+              <div>
+                <p class="eyebrow">解读结果</p>
+                <h2>先读结论，再看依据</h2>
+              </div>
+              <span class="state-pill">安全边界优先</span>
+            </div>
+            <div id="explainResult" class="readable-result">
+              <p class="muted">输入问题后，这里会显示可直接阅读的解释。</p>
+            </div>
+            <p id="transcript" class="log hidden"></p>
+          </article>
+        </div>
+
+        <aside id="supportPanel" class="assistant-rail" aria-label="辅助信息">
+          <details class="panel rail-card access-panel">
+            <summary>访问与状态</summary>
+            <div class="access-grid">
+              <section id="visitorProfilePanel" class="access-section">
+                <p class="eyebrow">本地偏好</p>
+                <label class="mode-control" for="visitorNickname">
+                  本地昵称
+                  <input id="visitorNickname" type="text" aria-label="本地访客昵称" />
+                </label>
+                <button id="saveVisitorProfileBtn" type="button">保存本地访客偏好</button>
+                <span id="visitorProfileStatus" class="muted"></span>
+              </section>
+
+              <section class="access-section">
+                <p class="eyebrow">测试访问</p>
+                <label class="mode-control" for="testerId">
+                  测试编号
+                  <input id="testerId" type="text" aria-label="测试用户编号" />
+                </label>
+                <label class="mode-control" for="inviteCode">
+                  邀请码
+                  <input id="inviteCode" type="text" aria-label="灰度邀请码" />
+                </label>
+              </section>
+
+              <section class="access-section">
+                <p class="eyebrow">内测安全状态</p>
+                <p id="safetyState" class="log compact">等待起课结果。</p>
+              </section>
+            </div>
+          </details>
+
+          <details id="learningMaterials" class="panel rail-card learning-panel">
+            <summary>学习资料</summary>
+            <p class="muted">学习资料会在生成解释后显示，不代表已经为当前问题起课。</p>
+            <article>
+              <h2>天将角色卡</h2>
+              <div id="personaCards" class="stack"></div>
+              <button id="personaCardsToggle" class="persona-toggle hidden" type="button">展开全部</button>
+            </article>
+            <article>
+              <h2>学习卡</h2>
+              <div id="learningCards" class="stack"></div>
+            </article>
+          </details>
+
+          <details id="learningPathPanel" class="panel rail-card learning-path-panel">
+            <summary>学习闯关</summary>
+            <section id="learningPathSummary" class="stack" aria-label="学习闯关概览"></section>
+            <section id="learningPathRecommended" class="stack" aria-label="推荐下一步"></section>
+            <section id="learningPathNodes" class="stack" aria-label="闯关节点"></section>
+            <article id="learningPathDetail" class="stack" aria-label="节点详情"></article>
+            <p id="learningPathStatus" class="muted" role="status" aria-live="polite"></p>
+          </details>
+
+          <section id="feedbackPanel" class="panel rail-card feedback-panel">
+            <p class="eyebrow">反馈</p>
+            <div class="feedback-grid">
+              <label for="feedbackType">类型</label>
+              <select id="feedbackType">
+                <option value="helpful">有帮助</option>
+                <option value="confusing">看不懂</option>
+                <option value="source_insufficient">出处不足</option>
+                <option value="safety_issue">安全问题</option>
+                <option value="chart_question">排盘疑问</option>
+                <option value="voice_issue">语音体验问题</option>
+              </select>
+              <label for="feedbackNote">备注</label>
+              <textarea id="feedbackNote" aria-label="反馈备注"></textarea>
+              <button id="submitFeedbackBtn" type="button">提交反馈</button>
+              <p id="feedbackStatus" class="muted"></p>
+            </div>
+          </section>
+        </aside>
+      </section>
+
+      <details id="experimentsPanel" class="experiments-drawer" aria-label="次级实验区">
+        <summary>更多 / 实验功能</summary>
+        <div class="secondary-grid">
+
+          <article class="panel">
+            <p class="eyebrow">灰度</p>
+            <h2>灰度测试任务</h2>
+            <div class="canary-summary">
+              <div class="canary-summary-row">
+                <strong id="canaryStatusBadge" class="canary-status-badge">正在读取状态</strong>
+                <span id="canaryProgressLabel" class="muted">0 / 4 已完成</span>
+              </div>
+              <p id="canaryOverview" class="muted">正在读取受邀测试说明、任务进度和当前阻断原因。</p>
+              <div class="canary-progress-bar" aria-hidden="true">
+                <span id="canaryProgressBarFill"></span>
+              </div>
+              <div id="canaryMilestones" class="canary-milestones"></div>
+            </div>
+            <ul id="canaryTaskList" class="stack canary-task-list"></ul>
+          </article>
+
+          <article class="panel">
+            <p class="eyebrow">兴趣</p>
+            <h2>兴趣记录</h2>
+            <p class="muted">先记录上游学习/会员兴趣，再判断是否值得进入后续商业化实验。</p>
+            <div id="commercialInterestSummary" class="stack">
+              <p class="muted">正在读取兴趣信号和实验阶段。</p>
+            </div>
+            <button id="commercialInterest" type="button">记录学习/会员兴趣</button>
+            <p id="commercialInterestStatus" class="muted"></p>
+          </article>
+
+          <article id="monetizationPanel" class="panel">
+            <p class="eyebrow">实验</p>
+            <h2>商业化兴趣实验</h2>
+            <p class="muted">权益预览只记录兴趣，不售卖、不发放会员权益。</p>
+            <div class="monetization-summary">
+              <div class="canary-summary-row">
+                <span id="monetizationGateBadge" class="canary-status-badge">读取中</span>
+                <span id="monetizationMetricsHeadline" class="muted">正在读取实验指标。</span>
+              </div>
+              <p id="monetizationOverview" class="muted">正在读取当前阶段、阻塞原因和下一步。</p>
+              <div id="monetizationReasonList" class="canary-milestones"></div>
+              <div id="monetizationMetricsList" class="monetization-chip-list"></div>
+            </div>
+            <div id="offerCatalogList" class="stack"></div>
+            <div class="button-row">
+              <button class="monetizationInterest" type="button" data-event-type="member_interest" data-offer-id="offer-membership-v0">会员权益预览</button>
+              <button class="monetizationInterest" type="button" data-event-type="course_interest" data-offer-id="offer-course-v0">课程兴趣</button>
+              <button class="monetizationInterest" type="button" data-event-type="business_interest" data-offer-id="offer-b2b-v0">商务合作兴趣</button>
+              <button class="monetizationInterest" type="button" data-event-type="ip_interest" data-offer-id="offer-ip-v0">文创周边兴趣</button>
+            </div>
+            <p id="monetizationStatus" class="muted"></p>
+          </article>
+
+          <article id="businessLeadPanel" class="panel">
+            <p class="eyebrow">合作</p>
+            <h2>商务线索</h2>
+            <p class="muted">只在实验开放时写入线索，用来判断老师、书店、展陈或文旅合作是否值得继续设计。</p>
+            <div id="commercialPathSteps" class="commercial-path-steps" aria-label="商业路径"></div>
+            <p id="commercialPathSummary" class="muted">正在读取商业路径状态。</p>
+            <div id="commercialPathMetrics" class="monetization-chip-list"></div>
+            <label for="businessLeadNickname">联系人昵称</label>
+            <input id="businessLeadNickname" type="text" placeholder="例如：书店主理人 / 课程负责人" />
+            <label for="businessLeadChannel">渠道</label>
+            <input id="businessLeadChannel" type="text" placeholder="例如：微信社群 / 线下活动 / 朋友转介绍" />
+            <label for="businessLeadSummary">需求摘要</label>
+            <textarea id="businessLeadSummary" placeholder="例如：想做 20 人传统文化工作坊，重点看讲解节奏、互动体验和现场物料。"></textarea>
+            <button id="submitBusinessLeadBtn" type="button">提交商务线索</button>
+            <p id="businessLeadStatus" class="muted"></p>
+            <div id="businessLeadOutcome" class="stack" aria-live="polite"></div>
+          </article>
+
+          <article id="membershipTiersPanel" class="panel">
+            <p class="eyebrow">会员</p>
+            <h2>会员权益预览</h2>
+            <p class="muted">沙箱演示不产生真实扣款，权益只用于上线前准备。</p>
+            <div class="canary-summary-row">
+              <strong id="paymentGateBadge" class="canary-status-badge">读取中</strong>
+              <span class="muted">支付准备闸门</span>
+            </div>
+            <div id="paymentGateReasonList" class="canary-milestones"></div>
+            <div id="paymentCapabilitiesList" class="canary-milestones"></div>
+            <div id="membershipTiersList" class="stack"></div>
+            <p id="paymentGateStatus" class="muted"></p>
+          </article>
+
+          <article id="sandboxPaymentPanel" class="panel">
+            <p class="eyebrow">沙箱</p>
+            <h2>沙箱支付演示</h2>
+            <label for="paymentTierSelect">权益层</label>
+            <select id="paymentTierSelect"></select>
+            <div class="button-row">
+              <button id="startSandboxCheckoutBtn" type="button">创建沙箱订单</button>
+              <button id="confirmSandboxPaymentBtn" type="button">模拟支付成功</button>
+              <button id="failSandboxPaymentBtn" type="button">模拟支付失败</button>
+              <button id="cancelSandboxOrderBtn" type="button">取消订单</button>
+              <button id="refundSandboxOrderBtn" type="button">退款演示</button>
+            </div>
+            <div id="paymentMetricsList" class="monetization-chip-list"></div>
+            <p id="sandboxOrderStatus" class="muted">尚未创建沙箱订单。</p>
+            <div id="sandboxOrderDetail" class="stack" aria-live="polite"></div>
+          </article>
+
+          <details id="debugDetails" class="panel debug-details">
+            <summary>调试详情</summary>
+            <article>
+              <h2>调用状态</h2>
+              <pre id="toolLog" class="log compact"></pre>
+            </article>
+            <article>
+              <h2>结构化数据</h2>
+              <pre id="interpretationPreview" class="log compact"></pre>
+              <pre id="debugJson" class="log compact"></pre>
+            </article>
+          </details>
+
+          <article id="shareReport" class="panel share-report" tabindex="-1">
+            <div class="share-report-header">
+              <div>
+                <p class="eyebrow">报告</p>
+                <h2>分享报告</h2>
+              </div>
+              <div class="share-report-actions">
+                <button id="copyShareReportTextBtn" type="button" disabled>复制分享文案</button>
+                <button id="copyShareReportHtmlBtn" type="button" disabled>复制网页草稿</button>
+              </div>
+            </div>
+            <div id="shareReportMeta" class="share-report-meta"></div>
+            <section id="shareReportLead" class="share-report-lead">
+              <p class="muted">完成一次起课后，这里会整理成更易读的分享卡片与本地草稿。</p>
+            </section>
+            <div id="shareReportCards" class="share-report-grid">
+              <article class="share-report-card share-report-card--empty">
+                <p class="muted">当前还没有分享报告。起课完成后，会在这里展示摘要、提示和可复制内容。</p>
+              </article>
+            </div>
+            <p id="shareReportCopyStatus" class="muted" role="status" aria-live="polite">
+              复制只在当前浏览器本地进行，不生成外链。
+            </p>
+            <details id="shareReportDraftDetails" class="share-report-draft hidden">
+              <summary>高级草稿</summary>
+              <div class="share-report-draft-body">
+                <div class="share-report-draft-toolbar">
+                  <div id="shareReportDraftMeta" class="share-report-meta share-report-meta--draft"></div>
+                  <button id="copyShareReportDraftBtn" type="button" disabled>复制文档草稿提纲</button>
+                </div>
+                <div id="shareReportDraftCards" class="share-report-draft-grid"></div>
+              </div>
+            </details>
+          </article>
+        </div>
+      </details>
+
+      <audio id="remoteAudio" autoplay></audio>
+    </main>
+    <script src="/static/realtime/language.js"></script>
+    <script src="/static/realtime/app.js?v=clickability-2"></script>
+  </body>
+</html>

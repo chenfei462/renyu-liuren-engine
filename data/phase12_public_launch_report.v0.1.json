@@ -1,0 +1,6 @@
+{
+  "report_id": "phase12_public_launch_report.v0.1",
+  "decision": "do_not_open_public_mvp",
+  "blocked_review_list": ["public_release_gate_blocked"],
+  "next_step": "return_to_phase10_or_phase11_fix"
+}

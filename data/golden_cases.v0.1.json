@@ -1,0 +1,2462 @@
+[
+  {
+    "case_id": "GC-001",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 001",
+      "datetime": "2026-04-01T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-002",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 002",
+      "datetime": "2026-04-02T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-003",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 003",
+      "datetime": "2026-04-03T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "子",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fuyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-004",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 004",
+      "datetime": "2026-04-04T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "午",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fanyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-005",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 005",
+      "datetime": "2026-04-05T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "丑",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "pending_expert_review",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-006",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 006",
+      "datetime": "2026-04-06T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-007",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 007",
+      "datetime": "2026-04-07T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-008",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 008",
+      "datetime": "2026-04-08T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "子",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fuyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-009",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 009",
+      "datetime": "2026-04-09T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "午",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fanyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-010",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 010",
+      "datetime": "2026-04-10T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "丑",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "pending_expert_review",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-011",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 011",
+      "datetime": "2026-04-11T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-012",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 012",
+      "datetime": "2026-04-12T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-013",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 013",
+      "datetime": "2026-04-13T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "子",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fuyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-014",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 014",
+      "datetime": "2026-04-14T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "午",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fanyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-015",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 015",
+      "datetime": "2026-04-15T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "丑",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "pending_expert_review",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-016",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 016",
+      "datetime": "2026-04-16T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-017",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 017",
+      "datetime": "2026-04-17T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-018",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 018",
+      "datetime": "2026-04-18T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "子",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fuyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-019",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 019",
+      "datetime": "2026-04-19T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "午",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fanyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-020",
+    "source_cards": [
+      "RC-044",
+      "RC-045",
+      "RC-048",
+      "RC-051",
+      "RC-052",
+      "RC-055",
+      "RC-065"
+    ],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 020",
+      "datetime": "2026-04-20T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "丑",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "pending_expert_review",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-021",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 021",
+      "datetime": "2026-04-21T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-022",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 022",
+      "datetime": "2026-04-22T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-023",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 023",
+      "datetime": "2026-04-23T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-024",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 024",
+      "datetime": "2026-04-24T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-025",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 025",
+      "datetime": "2026-04-25T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-026",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 026",
+      "datetime": "2026-04-26T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-027",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 027",
+      "datetime": "2026-04-27T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-028",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 028",
+      "datetime": "2026-04-28T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-029",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 029",
+      "datetime": "2026-04-01T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-030",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 030",
+      "datetime": "2026-04-02T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-031",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 031",
+      "datetime": "2026-04-03T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-032",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 032",
+      "datetime": "2026-04-04T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-033",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 033",
+      "datetime": "2026-04-05T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-034",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 034",
+      "datetime": "2026-04-06T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-035",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 035",
+      "datetime": "2026-04-07T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-036",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 036",
+      "datetime": "2026-04-08T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-037",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 037",
+      "datetime": "2026-04-09T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-038",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 038",
+      "datetime": "2026-04-10T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-039",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 039",
+      "datetime": "2026-04-11T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-040",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 040",
+      "datetime": "2026-04-12T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-041",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 041",
+      "datetime": "2026-04-13T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-042",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 042",
+      "datetime": "2026-04-14T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-043",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 043",
+      "datetime": "2026-04-15T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-044",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 044",
+      "datetime": "2026-04-16T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-045",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 045",
+      "datetime": "2026-04-17T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-046",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 046",
+      "datetime": "2026-04-18T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-047",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 047",
+      "datetime": "2026-04-19T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-048",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 048",
+      "datetime": "2026-04-20T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-049",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 049",
+      "datetime": "2026-04-21T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-050",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 050",
+      "datetime": "2026-04-22T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-001",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-051",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 051",
+      "datetime": "2026-04-23T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-052",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 052",
+      "datetime": "2026-04-24T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-053",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 053",
+      "datetime": "2026-04-25T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-054",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 054",
+      "datetime": "2026-04-26T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-055",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 055",
+      "datetime": "2026-04-27T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-056",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 056",
+      "datetime": "2026-04-28T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-057",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 057",
+      "datetime": "2026-04-01T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-058",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 058",
+      "datetime": "2026-04-02T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-059",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 059",
+      "datetime": "2026-04-03T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-060",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 060",
+      "datetime": "2026-04-04T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-061",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 061",
+      "datetime": "2026-04-05T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-062",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 062",
+      "datetime": "2026-04-06T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-063",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 063",
+      "datetime": "2026-04-07T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-064",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 064",
+      "datetime": "2026-04-08T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-065",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 065",
+      "datetime": "2026-04-09T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-066",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 066",
+      "datetime": "2026-04-10T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-067",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 067",
+      "datetime": "2026-04-11T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-068",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 068",
+      "datetime": "2026-04-12T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-069",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 069",
+      "datetime": "2026-04-13T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-070",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 070",
+      "datetime": "2026-04-14T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "辰",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "zhongshen",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-071",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 071",
+      "datetime": "2026-04-15T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "子",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fuyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-072",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 072",
+      "datetime": "2026-04-16T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "子",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fuyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-073",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 073",
+      "datetime": "2026-04-17T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "子",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fuyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-074",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 074",
+      "datetime": "2026-04-18T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "子",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fuyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-075",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 075",
+      "datetime": "2026-04-19T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "子",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fuyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-076",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 076",
+      "datetime": "2026-04-20T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "子",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fuyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-077",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 077",
+      "datetime": "2026-04-21T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "子",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fuyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-078",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 078",
+      "datetime": "2026-04-22T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "子",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fuyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-079",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 079",
+      "datetime": "2026-04-23T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "子",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fuyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-080",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 080",
+      "datetime": "2026-04-24T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "子",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fuyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-081",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 081",
+      "datetime": "2026-04-25T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "午",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fanyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-082",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 082",
+      "datetime": "2026-04-26T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "午",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fanyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-083",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 083",
+      "datetime": "2026-04-27T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "午",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fanyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-084",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 084",
+      "datetime": "2026-04-28T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "午",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fanyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-085",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 085",
+      "datetime": "2026-04-01T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "午",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fanyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-086",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 086",
+      "datetime": "2026-04-02T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "午",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fanyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-087",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 087",
+      "datetime": "2026-04-03T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "午",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fanyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-088",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 088",
+      "datetime": "2026-04-04T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "午",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fanyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-089",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 089",
+      "datetime": "2026-04-05T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "午",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fanyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-090",
+    "source_cards": [],
+    "needs_expert_review": true,
+    "input": {
+      "question": "phase2 regression case 090",
+      "datetime": "2026-04-06T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-013",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "午",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "fanyin",
+      "is_high_risk": false
+    }
+  },
+  {
+    "case_id": "GC-091",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 091",
+      "datetime": "2026-04-07T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-009",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": true
+    }
+  },
+  {
+    "case_id": "GC-092",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 092",
+      "datetime": "2026-04-08T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-010",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": true
+    }
+  },
+  {
+    "case_id": "GC-093",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 093",
+      "datetime": "2026-04-09T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-011",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": true
+    }
+  },
+  {
+    "case_id": "GC-094",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 094",
+      "datetime": "2026-04-10T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-012",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": true
+    }
+  },
+  {
+    "case_id": "GC-095",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 095",
+      "datetime": "2026-04-11T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-009",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": true
+    }
+  },
+  {
+    "case_id": "GC-096",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 096",
+      "datetime": "2026-04-12T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-010",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": true
+    }
+  },
+  {
+    "case_id": "GC-097",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 097",
+      "datetime": "2026-04-13T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-011",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": true
+    }
+  },
+  {
+    "case_id": "GC-098",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 098",
+      "datetime": "2026-04-14T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-012",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": true
+    }
+  },
+  {
+    "case_id": "GC-099",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 099",
+      "datetime": "2026-04-15T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-009",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": true
+    }
+  },
+  {
+    "case_id": "GC-100",
+    "source_cards": [],
+    "needs_expert_review": false,
+    "input": {
+      "question": "phase2 regression case 100",
+      "datetime": "2026-04-16T10:30:00",
+      "timezone": "Asia/Shanghai",
+      "location": "Shanghai",
+      "category": "Q-010",
+      "manual_params": {
+        "month_general": "子",
+        "divination_hour": "卯",
+        "ganzhi_day": "甲子",
+        "school_version": "school_v0_research_default"
+      }
+    },
+    "expected": {
+      "month_general": "子",
+      "selected_transmission_rule": "yuanshou",
+      "is_high_risk": true
+    }
+  }
+]

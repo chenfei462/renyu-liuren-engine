@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "canary validate response",
+  "type": "object",
+  "required": ["validation_id", "canary_id", "allowed", "blocked_reasons"],
+  "properties": {
+    "validation_id": {"type": "string", "const": "canary_validate.v0.1"},
+    "canary_id": {"type": "string", "const": "canary_testers.v0.1"},
+    "allowed": {"type": "boolean"},
+    "tester_id": {"type": "string"},
+    "invite_code_accepted": {"type": "boolean"},
+    "blocked_reasons": {"type": "array", "items": {"type": "string"}},
+    "notice": {"type": "string"}
+  },
+  "additionalProperties": true
+}

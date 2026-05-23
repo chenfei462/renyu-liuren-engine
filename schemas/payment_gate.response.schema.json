@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Payment Readiness Gate Response",
+  "type": "object",
+  "required": ["gate_id", "gate_status", "blocked_reasons", "next_step"],
+  "additionalProperties": true
+}

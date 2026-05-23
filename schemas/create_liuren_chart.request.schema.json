@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "create_liuren_chart request",
+  "type": "object",
+  "required": ["question", "datetime", "timezone"],
+  "properties": {
+    "question": {"type": "string"},
+    "datetime": {"type": "string"},
+    "timezone": {"type": "string"},
+    "location": {"type": ["string", "null"]},
+    "category": {"type": ["string", "null"]},
+    "manual_params": {
+      "type": "object",
+      "properties": {
+        "month_general": {"type": ["string", "null"]},
+        "divination_hour": {"type": ["string", "null"]},
+        "ganzhi_day": {"type": ["string", "null"]},
+        "year_fate": {"type": ["string", "null"]},
+        "school_version": {"type": "string"}
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}

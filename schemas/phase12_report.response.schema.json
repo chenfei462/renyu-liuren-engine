@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "phase12 public launch report response",
+  "type": "object",
+  "required": ["report_id", "public_status", "public_metrics", "decision"],
+  "properties": {
+    "report_id": {"type": "string", "const": "phase12_public_launch_report.v0.1"},
+    "generated_at": {"type": "string"},
+    "public_status": {"type": "object"},
+    "public_metrics": {"type": "object"},
+    "decision": {"type": "string"},
+    "next_step": {"type": "string"},
+    "blocked_review_list": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

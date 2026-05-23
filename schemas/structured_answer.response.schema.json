@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "structured_answer response",
+  "type": "object",
+  "required": [
+    "overview",
+    "chart_facts",
+    "evidence",
+    "rule_reasoning",
+    "plain_explanation",
+    "action_prompts",
+    "safety_notice",
+    "evidence_coverage"
+  ],
+  "properties": {
+    "overview": {"type": "string"},
+    "chart_facts": {"type": "object"},
+    "evidence": {"type": "array"},
+    "rule_reasoning": {"type": "array"},
+    "plain_explanation": {"type": "array"},
+    "action_prompts": {"type": "array"},
+    "safety_notice": {"type": "object"},
+    "safety_validation": {"type": "object"},
+    "beta_readiness_flags": {"type": "array", "items": {"type": "string"}},
+    "blocked_reasons": {"type": "array", "items": {"type": "string"}},
+    "beta_scope": {"type": "object"},
+    "feedback_token": {"type": "string"},
+    "tester_notice": {"type": "string"},
+    "entertainment": {
+      "type": "object",
+      "properties": {
+        "persona_lines": {"type": "array"},
+        "story_scene": {"type": "string"},
+        "mentor_steps": {"type": "array"},
+        "learning_cards": {"type": "array"},
+        "share_report": {
+          "type": "object",
+          "properties": {
+            "report_type": {"type": "string"},
+            "text": {"type": "string"},
+            "html": {"type": "string"},
+            "pdf_report_draft": {"type": "object"},
+            "gating": {"type": "object"},
+            "content": {"type": "object"},
+            "sections": {"type": "array"},
+            "artifacts": {"type": "object"},
+            "share_channels": {"type": "array"},
+            "tracking": {"type": "object"}
+          },
+          "additionalProperties": true
+        }
+      }
+    },
+    "evidence_coverage": {
+      "type": "object",
+      "required": ["covered_judgments", "total_judgments", "ratio", "missing_reasons"]
+    }
+  },
+  "additionalProperties": true
+}

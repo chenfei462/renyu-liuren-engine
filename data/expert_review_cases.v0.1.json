@@ -1,0 +1,115 @@
+{
+  "review_id": "expert_review_cases.v0.1",
+  "include_golden_cases": true,
+  "default_status_for_golden_cases": "pending_expert_review",
+  "additional_cases": [
+    {
+      "case_id": "ER-YUANSHOU-001",
+      "rule_id": "yuanshou",
+      "source_ids": ["RC-045", "RC-053", "RC-055"],
+      "current_output": "元首样例规则路径已实现，需专家确认样例盘式。",
+      "review_status": "pending_expert_review",
+      "issue": "需确认唯一上克下条件和取初传路径。",
+      "approved_for_beta": true
+    },
+    {
+      "case_id": "ER-ZHONGSHEN-001",
+      "rule_id": "zhongshen",
+      "source_ids": ["RC-048", "RC-051"],
+      "current_output": "重审样例规则路径已实现，需专家确认样例盘式。",
+      "review_status": "pending_expert_review",
+      "issue": "需确认唯一下贼上条件和取初传路径。",
+      "approved_for_beta": true
+    },
+    {
+      "case_id": "ER-BIYONG-001",
+      "rule_id": "biyong",
+      "source_ids": ["RC-059"],
+      "current_output": "比用仅有候选轨迹，未实现完整择用公式。",
+      "review_status": "needs_expert_review",
+      "issue": "多处克贼候选择用需专家样例确认。",
+      "approved_for_beta": false
+    },
+    {
+      "case_id": "ER-SHEHAI-001",
+      "rule_id": "shehai",
+      "source_ids": ["RC-060"],
+      "current_output": "涉害仅保留规则框架。",
+      "review_status": "needs_expert_review",
+      "issue": "涉害深浅算法未审校。",
+      "approved_for_beta": false
+    },
+    {
+      "case_id": "ER-YAOKE-001",
+      "rule_id": "yaoke",
+      "source_ids": ["RC-061"],
+      "current_output": "遥克仅保留候选框架。",
+      "review_status": "needs_expert_review",
+      "issue": "无直接克贼时的遥克取法需审校。",
+      "approved_for_beta": false
+    },
+    {
+      "case_id": "ER-MAOXING-001",
+      "rule_id": "maoxing",
+      "source_ids": ["RC-062"],
+      "current_output": "昴星仅保留标签框架。",
+      "review_status": "needs_expert_review",
+      "issue": "特定无克条件需专家确认。",
+      "approved_for_beta": false
+    },
+    {
+      "case_id": "ER-BAZHUAN-001",
+      "rule_id": "bazhuan",
+      "source_ids": ["RC-063"],
+      "current_output": "八专仅保留标签框架。",
+      "review_status": "needs_expert_review",
+      "issue": "八专日判定表和取法需审校。",
+      "approved_for_beta": false
+    },
+    {
+      "case_id": "ER-BIEZE-001",
+      "rule_id": "bieze",
+      "source_ids": ["RC-064"],
+      "current_output": "别责仅保留候选框架。",
+      "review_status": "needs_expert_review",
+      "issue": "别责取法需专家确认。",
+      "approved_for_beta": false
+    },
+    {
+      "case_id": "ER-FUYIN-001",
+      "rule_id": "fuyin",
+      "source_ids": ["RC-065"],
+      "current_output": "伏吟有基础识别，但传取路径仍标记待审。",
+      "review_status": "needs_expert_review",
+      "issue": "伏吟完整取传和断语边界需审校。",
+      "approved_for_beta": false
+    },
+    {
+      "case_id": "ER-FANYIN-001",
+      "rule_id": "fanyin",
+      "source_ids": ["RC-065"],
+      "current_output": "返吟有基础识别，但传取路径仍标记待审。",
+      "review_status": "needs_expert_review",
+      "issue": "返吟完整取传和断语边界需审校。",
+      "approved_for_beta": false
+    },
+    {
+      "case_id": "ER-GENERALS-STORY-001",
+      "rule_id": "general_persona_story",
+      "source_ids": ["RC-067", "RC-079", "RC-080", "RC-087"],
+      "current_output": "十二天将角色化表达只改变语气，不改变排盘事实。",
+      "review_status": "pending_expert_review",
+      "issue": "需确认角色象意没有越界或过度拟人化。",
+      "approved_for_beta": true
+    },
+    {
+      "case_id": "ER-SAFETY-001",
+      "rule_id": "safety_only",
+      "source_ids": ["RC-102", "RC-103"],
+      "current_output": "医疗、法律、投资、人身安全强制安全降级。",
+      "review_status": "approved_internal",
+      "issue": "专家审校前可作为 Beta 红线。",
+      "approved_for_beta": true
+    }
+  ]
+}

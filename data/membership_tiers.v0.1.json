@@ -1,0 +1,56 @@
+{
+  "tiers_id": "membership_tiers.v0.1",
+  "purchase_notice": "购买内容组织、学习体验和报告能力，不购买现实结果。",
+  "tiers": [
+    {
+      "tier_id": "tier-free-v0",
+      "category": "free",
+      "title": "Free learning preview",
+      "summary": "Basic voice questions, term learning, limited chart attempts, and safety reminders.",
+      "sandbox_only": true,
+      "high_risk_unlocked": false,
+      "unreviewed_complex_rules_unlocked": false,
+      "rights_preview": ["basic_voice", "term_learning", "limited_chart_attempts"]
+    },
+    {
+      "tier_id": "tier-membership-v0",
+      "category": "membership",
+      "title": "Membership sandbox preview",
+      "summary": "Complete report draft, more learning cards, case library preview, and source-card expansion.",
+      "sandbox_only": true,
+      "high_risk_unlocked": false,
+      "unreviewed_complex_rules_unlocked": false,
+      "rights_preview": ["complete_report", "learning_card_extension", "case_library_preview"]
+    },
+    {
+      "tier_id": "tier-course-v0",
+      "category": "course",
+      "title": "Course sandbox preview",
+      "summary": "Authorized course outline, classic reading plan, and case live-session concept.",
+      "sandbox_only": true,
+      "high_risk_unlocked": false,
+      "unreviewed_complex_rules_unlocked": false,
+      "rights_preview": ["course_outline", "classic_reading_plan", "case_session_preview"]
+    },
+    {
+      "tier_id": "tier-b2b-v0",
+      "category": "b2b",
+      "title": "B2B sandbox preview",
+      "summary": "Culture venue, bookstore, exhibition, and travel-scene interaction plan.",
+      "sandbox_only": true,
+      "high_risk_unlocked": false,
+      "unreviewed_complex_rules_unlocked": false,
+      "rights_preview": ["event_plan_preview", "venue_script_preview", "installation_outline"]
+    },
+    {
+      "tier_id": "tier-ip-v0",
+      "category": "ip_presale",
+      "title": "IP goods sandbox preview",
+      "summary": "Twelve generals card, journal, sticker, and tabletop concept drafts.",
+      "sandbox_only": true,
+      "high_risk_unlocked": false,
+      "unreviewed_complex_rules_unlocked": false,
+      "rights_preview": ["card_concept", "journal_concept", "tabletop_concept"]
+    }
+  ]
+}

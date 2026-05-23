@@ -1,0 +1,15 @@
+{
+  "metrics_id": "growth_metrics.v0.1",
+  "generated_at": "2026-04-30T00:00:00Z",
+  "event_count": 0,
+  "unique_tester_count": 0,
+  "returning_tester_count": 0,
+  "story_mode_count": 0,
+  "mentor_mode_count": 0,
+  "learning_card_click_count": 0,
+  "share_report_count": 0,
+  "feedback_submit_count": 0,
+  "member_interest_count": 0,
+  "course_interest_count": 0,
+  "business_interest_count": 0
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "review status response",
+  "type": "object",
+  "required": ["expert_review", "copyright_review", "beta_readiness"],
+  "properties": {
+    "expert_review": {
+      "type": "object",
+      "required": ["review_id", "case_count", "pending_count"]
+    },
+    "copyright_review": {
+      "type": "object",
+      "required": ["review_id", "item_count", "blocked_count"]
+    },
+    "beta_readiness": {
+      "type": "object",
+      "required": ["ready_for_beta", "blocked_reasons", "allowed_beta_scope", "blocked_beta_scope"]
+    }
+  },
+  "additionalProperties": true
+}

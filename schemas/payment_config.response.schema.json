@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Payment Config Response",
+  "type": "object",
+  "required": ["config_id", "provider", "sandbox_enabled", "production_payments_enabled"],
+  "additionalProperties": true
+}

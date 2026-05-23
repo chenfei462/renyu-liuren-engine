@@ -1,0 +1,27 @@
+{
+  "config_id": "payment_config.v0.1",
+  "provider": "mock_sandbox",
+  "gate_statuses": ["blocked", "sandbox", "paused"],
+  "sandbox_enabled": true,
+  "production_payments_enabled": false,
+  "real_charge_enabled": false,
+  "requires_account_system": false,
+  "minimum_interest_thresholds": {
+    "member_interest_count": 1,
+    "pricing_view_count": 1,
+    "offer_click_count": 1
+  },
+  "enabled_capabilities": [
+    "mock_sandbox_checkout",
+    "sandbox_payment_confirm",
+    "sandbox_cancel",
+    "sandbox_refund",
+    "membership_tier_preview"
+  ],
+  "provider_policy": {
+    "production_provider": "not_configured",
+    "secret_storage": "no_plaintext_secrets",
+    "sandbox_notice": "Sandbox demo only. No real charge is created."
+  },
+  "purchase_notice": "购买内容组织、学习体验和报告能力，不购买现实结果。"
+}

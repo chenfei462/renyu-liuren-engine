@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "general personas response",
+  "type": "object",
+  "required": ["personas"],
+  "properties": {
+    "personas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["general", "role_name", "tone", "symbols", "usable_expression", "safety_boundaries", "source_ids"]
+      }
+    }
+  },
+  "additionalProperties": false
+}

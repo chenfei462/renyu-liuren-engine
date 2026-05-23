@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "visitor profile response",
+  "type": "object",
+  "required": ["stored"],
+  "properties": {
+    "stored": {"type": "boolean"},
+    "profile": {"type": "object"},
+    "gate": {"type": "object"},
+    "blocked_reasons": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

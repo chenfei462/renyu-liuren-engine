@@ -1,0 +1,104 @@
+{
+  "workflow_id": "expert_review_workflow.v0.1",
+  "phase": "phase10_expert_clearance",
+  "scope": "complex_nine_rules_before_canary",
+  "decisions": ["approved_for_canary", "blocked_until_reworked", "research_only"],
+  "tasks": [
+    {
+      "task_id": "ERW-BIYONG-001",
+      "rule_id": "biyong",
+      "case_ids": ["ER-BIYONG-001"],
+      "source_ids": ["RC-059"],
+      "current_output": "比用仅保留候选轨迹，未进入正常用户解释。",
+      "expert_opinion": "",
+      "processing_result": "",
+      "decision": "blocked_until_reworked",
+      "allow_canary": false,
+      "status": "pending_review"
+    },
+    {
+      "task_id": "ERW-SHEHAI-001",
+      "rule_id": "shehai",
+      "case_ids": ["ER-SHEHAI-001"],
+      "source_ids": ["RC-060"],
+      "current_output": "涉害仅保留规则框架，深浅算法仍待审校。",
+      "expert_opinion": "",
+      "processing_result": "",
+      "decision": "blocked_until_reworked",
+      "allow_canary": false,
+      "status": "pending_review"
+    },
+    {
+      "task_id": "ERW-YAOKE-001",
+      "rule_id": "yaoke",
+      "case_ids": ["ER-YAOKE-001"],
+      "source_ids": ["RC-061"],
+      "current_output": "遥克仅输出研究标签，不参与用户判断。",
+      "expert_opinion": "",
+      "processing_result": "",
+      "decision": "blocked_until_reworked",
+      "allow_canary": false,
+      "status": "pending_review"
+    },
+    {
+      "task_id": "ERW-MAOXING-001",
+      "rule_id": "maoxing",
+      "case_ids": ["ER-MAOXING-001"],
+      "source_ids": ["RC-062"],
+      "current_output": "昴星仅保留识别标签，取传细节等待专家复核。",
+      "expert_opinion": "",
+      "processing_result": "",
+      "decision": "blocked_until_reworked",
+      "allow_canary": false,
+      "status": "pending_review"
+    },
+    {
+      "task_id": "ERW-BAZHUAN-001",
+      "rule_id": "bazhuan",
+      "case_ids": ["ER-BAZHUAN-001"],
+      "source_ids": ["RC-063"],
+      "current_output": "八专仅保留课体候选，不进入 canary 正常解释。",
+      "expert_opinion": "",
+      "processing_result": "",
+      "decision": "blocked_until_reworked",
+      "allow_canary": false,
+      "status": "pending_review"
+    },
+    {
+      "task_id": "ERW-BIEZE-001",
+      "rule_id": "bieze",
+      "case_ids": ["ER-BIEZE-001"],
+      "source_ids": ["RC-064"],
+      "current_output": "别责仅保留候选框架，公式路径待复核。",
+      "expert_opinion": "",
+      "processing_result": "",
+      "decision": "blocked_until_reworked",
+      "allow_canary": false,
+      "status": "pending_review"
+    },
+    {
+      "task_id": "ERW-FUYIN-001",
+      "rule_id": "fuyin",
+      "case_ids": ["ER-FUYIN-001"],
+      "source_ids": ["RC-065"],
+      "current_output": "伏吟可识别基础标签，完整传取仍需审校。",
+      "expert_opinion": "",
+      "processing_result": "",
+      "decision": "blocked_until_reworked",
+      "allow_canary": false,
+      "status": "pending_review"
+    },
+    {
+      "task_id": "ERW-FANYIN-001",
+      "rule_id": "fanyin",
+      "case_ids": ["ER-FANYIN-001"],
+      "source_ids": ["RC-065"],
+      "current_output": "返吟可识别基础标签，完整传取仍需审校。",
+      "expert_opinion": "",
+      "processing_result": "",
+      "decision": "blocked_until_reworked",
+      "allow_canary": false,
+      "status": "pending_review"
+    }
+  ]
+}

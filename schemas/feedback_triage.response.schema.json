@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "feedback triage response",
+  "type": "object",
+  "required": ["triage_id", "summary", "items"],
+  "properties": {
+    "triage_id": {"type": "string", "const": "feedback_triage.v0.1"},
+    "generated_at": {"type": "string"},
+    "summary": {"type": "object"},
+    "items": {"type": "array"}
+  },
+  "additionalProperties": true
+}

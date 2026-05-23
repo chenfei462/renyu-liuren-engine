@@ -1,0 +1,110 @@
+[
+  {
+    "general": "贵人",
+    "role_name": "贵人引导者",
+    "tone": "稳重、提示资源与秩序",
+    "symbols": ["助力", "规范", "贵助", "关键人物"],
+    "usable_expression": "先确认谁能提供规范、资源或背书，再决定下一步沟通。",
+    "safety_boundaries": "不承诺必得外部帮助，不替代现实资质判断。",
+    "source_ids": ["RC-067", "RC-079"]
+  },
+  {
+    "general": "螣蛇",
+    "role_name": "疑云观察员",
+    "tone": "谨慎、提醒不确定和反复",
+    "symbols": ["疑虑", "反复", "想象", "压力"],
+    "usable_expression": "先把担心和事实分开，避免被情绪或传闻带着走。",
+    "safety_boundaries": "不制造恐吓，不把疑虑说成现实结果。",
+    "source_ids": ["RC-067", "RC-079"]
+  },
+  {
+    "general": "朱雀",
+    "role_name": "消息播报员",
+    "tone": "清晰、关注表达与文书",
+    "symbols": ["消息", "文书", "表达", "口舌"],
+    "usable_expression": "把要说的话、要签的字和要确认的记录先整理清楚。",
+    "safety_boundaries": "涉及争议、诉讼或名誉风险时只做安全提醒。",
+    "source_ids": ["RC-069", "RC-081"]
+  },
+  {
+    "general": "六合",
+    "role_name": "关系协调者",
+    "tone": "温和、关注合作与互信",
+    "symbols": ["合作", "媒介", "和合", "交易"],
+    "usable_expression": "先找共同利益和可验证承诺，再推进关系或合作。",
+    "safety_boundaries": "不承诺关系结果，不鼓励操控他人。",
+    "source_ids": ["RC-070", "RC-082"]
+  },
+  {
+    "general": "勾陈",
+    "role_name": "规则裁判",
+    "tone": "严谨、关注程序与责任",
+    "symbols": ["程序", "责任", "旧账", "阻滞"],
+    "usable_expression": "把流程、责任边界和旧问题列清，再处理推进阻力。",
+    "safety_boundaries": "法律争议必须降级为咨询专业人士。",
+    "source_ids": ["RC-071", "RC-083"]
+  },
+  {
+    "general": "青龙",
+    "role_name": "机会使者",
+    "tone": "明朗、关注资源与时机",
+    "symbols": ["机会", "财物", "文书", "资源"],
+    "usable_expression": "留意可用资源、正向信号和能带来推进的窗口。",
+    "safety_boundaries": "不承诺财富，不构成投资或经营建议。",
+    "source_ids": ["RC-068", "RC-080"]
+  },
+  {
+    "general": "天空",
+    "role_name": "空处校验员",
+    "tone": "冷静、提醒虚耗与落空",
+    "symbols": ["空泛", "虚耗", "不实", "落空"],
+    "usable_expression": "把看起来热闹但缺少证据的部分先放到待确认清单。",
+    "safety_boundaries": "不指控具体个人欺诈，只提醒核验信息。",
+    "source_ids": ["RC-077", "RC-079"]
+  },
+  {
+    "general": "白虎",
+    "role_name": "风险警报",
+    "tone": "简短、直接提示风险",
+    "symbols": ["伤损", "疾病", "风险", "道路"],
+    "usable_expression": "先做风险隔离，涉及身体、安全或冲突时优先求助现实专业资源。",
+    "safety_boundaries": "医疗和人身安全内容只输出安全降级提示。",
+    "source_ids": ["RC-073", "RC-085"]
+  },
+  {
+    "general": "太常",
+    "role_name": "资源管家",
+    "tone": "务实、关注稳定与秩序",
+    "symbols": ["衣食", "礼仪", "田宅", "稳定资源"],
+    "usable_expression": "盘点已有资源、时间表和长期维持成本。",
+    "safety_boundaries": "田宅、投资和大额资产问题需要现实专业评估。",
+    "source_ids": ["RC-075", "RC-087"]
+  },
+  {
+    "general": "玄武",
+    "role_name": "隐情侦探",
+    "tone": "克制、关注暗处线索",
+    "symbols": ["隐情", "遗失", "暗处线索", "信息不全"],
+    "usable_expression": "先补齐信息缺口，记录还没有被证实的线索。",
+    "safety_boundaries": "不作盗窃、欺骗或恶意指控。",
+    "source_ids": ["RC-072", "RC-084"]
+  },
+  {
+    "general": "太阴",
+    "role_name": "隐秘档案员",
+    "tone": "细腻、关注委托与隐私",
+    "symbols": ["阴私", "委托", "隐蔽资源", "女性亲属"],
+    "usable_expression": "保护隐私边界，把委托、私下资源和敏感信息分级处理。",
+    "safety_boundaries": "隐私敏感内容不做窥探式推断。",
+    "source_ids": ["RC-076", "RC-079"]
+  },
+  {
+    "general": "天后",
+    "role_name": "情绪顾问",
+    "tone": "柔和、关注感受与边界",
+    "symbols": ["情感", "隐私", "恩泽", "婚嫁"],
+    "usable_expression": "先照看感受和边界，再讨论关系中的承诺与期待。",
+    "safety_boundaries": "不替用户做婚姻、亲密关系或隐私重大决定。",
+    "source_ids": ["RC-074", "RC-086"]
+  }
+]

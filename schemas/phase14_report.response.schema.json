@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "phase14 monetization report response",
+  "type": "object",
+  "required": ["report_id", "monetization_gate", "monetization_metrics", "decision"],
+  "properties": {
+    "report_id": {"type": "string", "const": "phase14_monetization_report.v0.1"},
+    "monetization_gate": {"type": "object"},
+    "offer_catalog": {"type": "object"},
+    "monetization_metrics": {"type": "object"},
+    "interest_summary": {"type": "object"},
+    "decision": {"type": "string"},
+    "next_step": {"type": "string"},
+    "blocked_reasons": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

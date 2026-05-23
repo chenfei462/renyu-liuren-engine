@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "release config response",
+  "type": "object",
+  "required": ["release_id", "status", "release_notice", "allowed_modes", "allowed_categories", "blocked_categories"],
+  "properties": {
+    "release_id": {"type": "string", "const": "release_config.v0.1"},
+    "status": {"type": "string"},
+    "product_name": {"type": "string"},
+    "release_notice": {"type": "string"},
+    "allowed_modes": {"type": "array", "items": {"type": "string"}},
+    "allowed_categories": {"type": "array", "items": {"type": "string"}},
+    "blocked_categories": {"type": "array", "items": {"type": "string"}},
+    "allowed_features": {"type": "array", "items": {"type": "string"}},
+    "blocked_features": {"type": "array", "items": {"type": "string"}},
+    "legal_documents": {"type": "object"},
+    "monitoring_metrics": {"type": "array", "items": {"type": "string"}},
+    "exit_conditions": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

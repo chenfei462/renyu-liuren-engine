@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "source_cards response",
+  "type": "object",
+  "required": ["source_cards"],
+  "properties": {
+    "source_cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_id",
+          "book_or_source",
+          "chapter_or_location",
+          "claim_type",
+          "summary",
+          "tags",
+          "safety_note",
+          "copyright_status"
+        ]
+      }
+    }
+  },
+  "additionalProperties": false
+}

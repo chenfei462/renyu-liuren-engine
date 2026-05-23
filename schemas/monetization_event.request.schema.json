@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "monetization event request",
+  "type": "object",
+  "properties": {
+    "visitor_id": {"type": "string"},
+    "event_type": {"type": "string", "enum": ["member_interest", "course_interest", "business_interest", "ip_interest", "pricing_view", "offer_click"]},
+    "offer_id": {"type": "string"},
+    "source": {"type": "string"},
+    "mode": {"type": "string"},
+    "note": {"type": "string"},
+    "delete_request": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}

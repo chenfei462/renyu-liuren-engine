@@ -1,0 +1,6 @@
+{
+  "gate_id": "public_release_gate.v0.1",
+  "gate_status": "blocked",
+  "blocked_reasons": ["expert_review_pending", "canary_not_active"],
+  "next_step": "return_to_canary_or_review_fix"
+}

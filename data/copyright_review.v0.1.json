@@ -1,0 +1,45 @@
+{
+  "review_id": "copyright_review.v0.1",
+  "items": [
+    {
+      "item_id": "CR-001",
+      "target": "phase1_research/data/rule_source_cards.v0.1.md",
+      "source_type": "research_cards",
+      "beta_status": "approved_for_beta",
+      "allowed_use": "规则 ID、摘要、定位和规则化转写",
+      "blocked_use": "大段复制现代整理本或网页正文"
+    },
+    {
+      "item_id": "CR-002",
+      "target": "data/source_cards.v0.1.json",
+      "source_type": "source_card_seed",
+      "beta_status": "summary_only",
+      "allowed_use": "出处卡摘要和短定位",
+      "blocked_use": "替代原书正文展示"
+    },
+    {
+      "item_id": "CR-003",
+      "target": "data/general_personas.v0.1.json",
+      "source_type": "productized_persona",
+      "beta_status": "approved_for_beta",
+      "allowed_use": "原创角色化转写和安全边界",
+      "blocked_use": "声称为古籍原文"
+    },
+    {
+      "item_id": "CR-004",
+      "target": "data/learning_cards.v0.1.json",
+      "source_type": "learning_summary",
+      "beta_status": "approved_for_beta",
+      "allowed_use": "学习卡摘要和规则路径说明",
+      "blocked_use": "未经授权复制现代课程内容"
+    },
+    {
+      "item_id": "CR-005",
+      "target": "现代出版物、课程资料、论坛长文正文",
+      "source_type": "modern_copyrighted_material",
+      "beta_status": "blocked",
+      "allowed_use": "仅记录来源线索、摘要和规则化转写",
+      "blocked_use": "正文入库、长段引用、训练式拼接展示"
+    }
+  ]
+}

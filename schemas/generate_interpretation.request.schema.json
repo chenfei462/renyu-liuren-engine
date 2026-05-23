@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "generate_interpretation request",
+  "type": "object",
+  "required": ["chart_json", "evidence_cards", "mode"],
+  "properties": {
+    "chart_json": {"type": "object"},
+    "evidence_cards": {"type": "array", "items": {"type": "object"}},
+    "mode": {"type": "string", "enum": ["professional", "plain", "story", "mentor"]}
+  },
+  "additionalProperties": false
+}

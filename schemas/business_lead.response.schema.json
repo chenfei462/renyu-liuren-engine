@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "business lead response",
+  "type": "object",
+  "required": ["stored"],
+  "properties": {
+    "stored": {"type": "boolean"},
+    "lead": {"type": "object"},
+    "gate": {"type": "object"},
+    "metrics": {"type": "object"},
+    "blocked_reasons": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

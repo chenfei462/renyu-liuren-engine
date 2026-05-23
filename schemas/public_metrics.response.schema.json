@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "public metrics response",
+  "type": "object",
+  "required": ["metrics_id", "session_count", "completion_count", "feedback_submit_count"],
+  "properties": {
+    "metrics_id": {"type": "string", "const": "public_metrics.v0.1"},
+    "generated_at": {"type": "string"},
+    "session_count": {"type": "integer"},
+    "completion_count": {"type": "integer"},
+    "completion_rate": {"type": "number"},
+    "feedback_submit_count": {"type": "integer"},
+    "safety_block_count": {"type": "integer"},
+    "high_risk_trigger_count": {"type": "integer"},
+    "api_failure_count": {"type": "integer"},
+    "realtime_failure_count": {"type": "integer"},
+    "share_report_count": {"type": "integer"},
+    "share_report_generated_count": {"type": "integer"},
+    "share_report_user_reach_count": {"type": "integer"},
+    "share_report_metrics": {"type": "object"},
+    "member_interest_count": {"type": "integer"}
+  },
+  "additionalProperties": true
+}

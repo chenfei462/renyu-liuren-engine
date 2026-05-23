@@ -1,0 +1,18 @@
+{
+  "metrics_id": "canary_metrics.v0.1",
+  "generated_at": "2026-04-30T00:00:00Z",
+  "session_count": 0,
+  "unique_tester_count": 0,
+  "returning_tester_count": 0,
+  "completion_count": 0,
+  "story_mode_count": 0,
+  "mentor_mode_count": 0,
+  "feedback_submit_count": 0,
+  "share_report_count": 0,
+  "learning_card_click_count": 0,
+  "member_interest_count": 0,
+  "course_interest_count": 0,
+  "business_interest_count": 0,
+  "high_risk_leak_count": 0,
+  "realtime_tool_bypass_count": 0
+}

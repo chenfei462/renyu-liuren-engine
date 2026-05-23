@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "release readiness response",
+  "type": "object",
+  "required": ["readiness_id", "release_id", "release_status", "blocked_reasons", "allowed_for_mvp", "blocked_for_mvp", "needs_expert_review"],
+  "properties": {
+    "readiness_id": {"type": "string", "const": "release_readiness.v0.1"},
+    "release_id": {"type": "string"},
+    "generated_at": {"type": "string"},
+    "release_status": {"type": "string", "enum": ["ready", "blocked", "initial"]},
+    "blocked_reasons": {"type": "array", "items": {"type": "string"}},
+    "allowed_for_mvp": {"type": "object"},
+    "blocked_for_mvp": {"type": "object"},
+    "needs_expert_review": {"type": "object"},
+    "checked_inputs": {"type": "object"}
+  },
+  "additionalProperties": true
+}

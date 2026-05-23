@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ops status response",
+  "type": "object",
+  "required": ["ops_id", "status", "release_status", "blocked_reasons", "critical_event_count", "review_queue"],
+  "properties": {
+    "ops_id": {"type": "string", "const": "ops_config.v0.1"},
+    "status": {"type": "string", "enum": ["blocked", "canary", "paused"]},
+    "release_status": {"type": ["string", "null"]},
+    "pause_reason": {"type": "string"},
+    "blocked_reasons": {"type": "array", "items": {"type": "string"}},
+    "critical_event_count": {"type": "integer"},
+    "manual_pause_active": {"type": "boolean"},
+    "allowed_tester_count": {"type": "integer"},
+    "review_queue": {"type": "object"},
+    "canary_gate": {"type": "object"},
+    "notice": {"type": "string"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "growth metrics response",
+  "type": "object",
+  "required": [
+    "metrics_id",
+    "event_count",
+    "returning_tester_count",
+    "share_report_count",
+    "share_report_generated_count",
+    "share_report_user_reach_count"
+  ],
+  "properties": {
+    "metrics_id": {"type": "string", "const": "growth_metrics.v0.1"},
+    "generated_at": {"type": "string"},
+    "event_count": {"type": "integer"},
+    "unique_tester_count": {"type": "integer"},
+    "returning_tester_count": {"type": "integer"},
+    "story_mode_count": {"type": "integer"},
+    "mentor_mode_count": {"type": "integer"},
+    "learning_card_click_count": {"type": "integer"},
+    "share_report_count": {"type": "integer"},
+    "share_report_generated_count": {"type": "integer"},
+    "share_report_user_reach_count": {"type": "integer"},
+    "share_report_metrics": {"type": "object"},
+    "feedback_submit_count": {"type": "integer"},
+    "member_interest_count": {"type": "integer"},
+    "course_interest_count": {"type": "integer"},
+    "business_interest_count": {"type": "integer"}
+  },
+  "additionalProperties": true
+}

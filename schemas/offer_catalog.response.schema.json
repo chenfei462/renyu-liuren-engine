@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "offer catalog response",
+  "type": "object",
+  "required": ["catalog_id", "offers"],
+  "properties": {
+    "catalog_id": {"type": "string", "const": "offer_catalog.v0.1"},
+    "catalog_notice": {"type": "string"},
+    "offers": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": true
+}

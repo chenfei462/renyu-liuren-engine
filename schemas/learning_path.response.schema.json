@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "learning path response",
+  "type": "object",
+  "required": ["path_id", "nodes"],
+  "properties": {
+    "path_id": {"type": "string", "const": "learning_path.v0.1"},
+    "title": {"type": "string"},
+    "nodes": {"type": "array", "items": {"type": "object"}}
+  },
+  "additionalProperties": true
+}

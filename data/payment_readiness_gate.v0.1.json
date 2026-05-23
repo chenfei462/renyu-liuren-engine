@@ -1,0 +1,6 @@
+{
+  "gate_id": "payment_readiness_gate.v0.1",
+  "gate_status": "blocked",
+  "blocked_reasons": ["monetization_not_active"],
+  "next_step": "return_to_monetization_fix"
+}

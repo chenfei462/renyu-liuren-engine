@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "public session request",
+  "type": "object",
+  "properties": {
+    "visitor_id": {"type": "string"},
+    "chart_id": {"type": "string"},
+    "mode": {"type": "string", "enum": ["professional", "plain", "story", "mentor"]},
+    "category": {"type": "string"},
+    "session_status": {"type": "string"},
+    "feedback_type": {"type": "string"},
+    "safety_action": {"type": "string"},
+    "blocked_reasons": {"type": "array", "items": {"type": "string"}},
+    "latency_ms": {"type": "number"},
+    "event_type": {"type": "string"},
+    "source": {"type": "string"},
+    "note": {"type": "string"},
+    "delete_request": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}

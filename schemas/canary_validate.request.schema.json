@@ -1,0 +1,10 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "canary validate request",
+  "type": "object",
+  "properties": {
+    "tester_id": {"type": ["string", "null"]},
+    "invite_code": {"type": ["string", "null"]}
+  },
+  "additionalProperties": false
+}

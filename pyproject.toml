@@ -1,0 +1,22 @@
+[project]
+name = "renyu-liuren-engine"
+version = "0.1.0"
+description = "Deterministic Da Liu Ren chart engine MVP for RenYu phase 2."
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.110",
+    "uvicorn>=0.27",
+    "httpx>=0.27",
+    "pydantic>=2",
+]
+
+[project.scripts]
+liuren-chart = "liuren_engine.cli:main"
+liuren-web = "liuren_engine.webapp:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,6 @@
+{
+  "report_id": "phase15_payment_readiness_report.v0.1",
+  "decision": "do_not_start_payment_sandbox",
+  "blocked_reasons": ["monetization_not_active"],
+  "next_step": "return_to_phase14_or_safety_fix"
+}

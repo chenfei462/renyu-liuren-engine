@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "canary session response",
+  "type": "object",
+  "required": ["stored"],
+  "properties": {
+    "stored": {"type": "boolean"},
+    "session": {"type": "object"},
+    "metrics": {"type": "object"},
+    "blocked_reasons": {"type": "array", "items": {"type": "string"}},
+    "ops_status": {"type": "object"},
+    "canary_validation": {"type": "object"}
+  },
+  "additionalProperties": true
+}

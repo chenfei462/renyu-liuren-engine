@@ -1,0 +1,13 @@
+{
+  "config_id": "public_launch_config.v0.1",
+  "desired_status": "preview",
+  "statuses": ["blocked", "preview", "live", "paused"],
+  "payments_enabled": false,
+  "accounts_enabled": false,
+  "allowed_modes": ["professional", "plain", "story", "mentor"],
+  "allowed_categories": ["Q-001", "Q-002", "Q-004", "Q-005", "Q-013", "Q-014", "Q-015"],
+  "blocked_categories": ["Q-009", "Q-010", "Q-011", "Q-012"],
+  "public_notice": "Public MVP is a traditional culture learning and entertainment experience, not real-world advice.",
+  "pause_notice": "Public MVP is paused for safety or maintenance review.",
+  "delete_request_notice": "No audio is stored. Public feedback and derived chart records can be deleted on request."
+}

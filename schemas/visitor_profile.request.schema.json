@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "visitor profile request",
+  "type": "object",
+  "properties": {
+    "visitor_id": {"type": "string"},
+    "nickname": {"type": "string"},
+    "mode_preference": {"type": "string"},
+    "source": {"type": "string"},
+    "note": {"type": "string"},
+    "delete_request": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "public session response",
+  "type": "object",
+  "required": ["stored"],
+  "properties": {
+    "stored": {"type": "boolean"},
+    "session": {"type": "object"},
+    "metrics": {"type": "object"},
+    "status": {"type": "object"},
+    "blocked_reasons": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

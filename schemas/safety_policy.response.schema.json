@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "safety policy response",
+  "type": "object",
+  "required": ["policy_id", "risk_areas", "forbidden_terms", "beta_allowed_scope", "beta_blocked_scope"],
+  "properties": {
+    "policy_id": {"type": "string"},
+    "version": {"type": "string"},
+    "disclaimer": {"type": "string"},
+    "risk_areas": {"type": "array"},
+    "forbidden_terms": {"type": "array", "items": {"type": "string"}},
+    "required_flags": {"type": "array", "items": {"type": "string"}},
+    "beta_allowed_scope": {"type": "array", "items": {"type": "string"}},
+    "beta_blocked_scope": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

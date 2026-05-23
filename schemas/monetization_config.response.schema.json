@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "monetization config response",
+  "type": "object",
+  "required": ["config_id", "gate_statuses", "allowed_event_types"],
+  "properties": {
+    "config_id": {"type": "string", "const": "monetization_config.v0.1"},
+    "experiment_enabled": {"type": "boolean"},
+    "gate_statuses": {"type": "array", "items": {"type": "string"}},
+    "payments_enabled": {"type": "boolean"},
+    "membership_entitlements_enabled": {"type": "boolean"},
+    "enabled_experiments": {"type": "array", "items": {"type": "string"}},
+    "allowed_event_types": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

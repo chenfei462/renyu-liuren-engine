@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Realtime WebRTC session request",
+  "type": "object",
+  "required": ["sdp"],
+  "properties": {
+    "sdp": {
+      "type": "string",
+      "description": "Browser-generated WebRTC SDP offer. The HTTP endpoint accepts this as application/sdp."
+    }
+  },
+  "additionalProperties": false
+}

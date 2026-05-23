@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "phase13 productization report response",
+  "type": "object",
+  "required": ["report_id", "productization_gate", "product_metrics", "decision"],
+  "properties": {
+    "report_id": {"type": "string", "const": "phase13_productization_report.v0.1"},
+    "productization_gate": {"type": "object"},
+    "product_metrics": {"type": "object"},
+    "decision": {"type": "string"},
+    "next_step": {"type": "string"},
+    "blocked_review_list": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

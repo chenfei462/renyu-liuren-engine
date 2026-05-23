@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "public status response",
+  "type": "object",
+  "required": ["status_id", "launch_status", "blocked_reasons"],
+  "properties": {
+    "status_id": {"type": "string", "const": "public_status.v0.1"},
+    "launch_status": {"type": "string", "enum": ["blocked", "preview", "live", "paused"]},
+    "public_launch_status": {"type": "string"},
+    "pause_reason": {"type": "string"},
+    "blocked_reasons": {"type": "array", "items": {"type": "string"}},
+    "public_release_gate": {"type": "object"},
+    "allowed_categories": {"type": "array", "items": {"type": "string"}},
+    "blocked_categories": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

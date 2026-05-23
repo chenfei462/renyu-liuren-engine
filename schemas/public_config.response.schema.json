@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "public launch config response",
+  "type": "object",
+  "required": ["config_id", "statuses", "allowed_categories", "blocked_categories"],
+  "properties": {
+    "config_id": {"type": "string", "const": "public_launch_config.v0.1"},
+    "desired_status": {"type": "string"},
+    "statuses": {"type": "array", "items": {"type": "string"}},
+    "payments_enabled": {"type": "boolean"},
+    "accounts_enabled": {"type": "boolean"},
+    "allowed_modes": {"type": "array", "items": {"type": "string"}},
+    "allowed_categories": {"type": "array", "items": {"type": "string"}},
+    "blocked_categories": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

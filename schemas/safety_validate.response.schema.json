@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "safety validate response",
+  "type": "object",
+  "required": ["policy_id", "mode", "action", "passed", "blocked_reasons", "matched_forbidden_terms"],
+  "properties": {
+    "policy_id": {"type": "string"},
+    "mode": {"type": "string"},
+    "action": {"type": "string"},
+    "passed": {"type": "boolean"},
+    "blocked_reasons": {"type": "array", "items": {"type": "string"}},
+    "matched_forbidden_terms": {"type": "array", "items": {"type": "string"}},
+    "checked_fields": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

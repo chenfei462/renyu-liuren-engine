@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "share report response",
+  "type": "object",
+  "required": [
+    "report_type",
+    "chart_id",
+    "mode",
+    "text",
+    "html",
+    "storage",
+    "pdf_report_draft",
+    "gating",
+    "content",
+    "sections",
+    "artifacts",
+    "share_channels",
+    "tracking"
+  ],
+  "properties": {
+    "report_type": {"type": "string", "const": "local_share_report"},
+    "chart_id": {"type": "string"},
+    "mode": {"type": ["string", "null"]},
+    "title": {"type": "string"},
+    "summary": {"type": "string"},
+    "question": {"type": "string"},
+    "lesson_type": {"type": "string"},
+    "content_state": {"type": "string", "enum": ["full_interpretation", "safety_only", "blocked"]},
+    "gating": {"type": "object"},
+    "content": {"type": "object"},
+    "sections": {"type": "array", "items": {"type": "object"}},
+    "text": {"type": "string"},
+    "html": {"type": "string"},
+    "pdf_report_draft": {"type": "object"},
+    "artifacts": {"type": "object"},
+    "share_channels": {"type": "array", "items": {"type": "object"}},
+    "tracking": {"type": "object"},
+    "storage": {"type": "string", "const": "local_only"}
+  },
+  "additionalProperties": true
+}

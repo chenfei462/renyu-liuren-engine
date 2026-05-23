@@ -1,0 +1,49 @@
+{
+  "release_id": "release_config.v0.1",
+  "status": "limited_mvp_release_candidate",
+  "product_name": "壬语",
+  "release_notice": "壬语 MVP 仅提供传统文化学习与娱乐体验，不构成现实建议。",
+  "allowed_modes": ["professional", "plain", "story", "mentor"],
+  "allowed_categories": ["Q-001", "Q-002", "Q-004", "Q-005", "Q-013", "Q-014", "Q-015"],
+  "blocked_categories": ["Q-009", "Q-010", "Q-011", "Q-012"],
+  "allowed_features": [
+    "语音起课",
+    "专业/白话解释",
+    "故事/导师表达",
+    "出处卡",
+    "学习卡",
+    "本地分享报告",
+    "反馈记录"
+  ],
+  "blocked_features": [
+    "医疗、法律、投资、人身安全现实建议",
+    "隐私窥探",
+    "感情操控",
+    "应期承诺",
+    "未审校复杂九宗完整断法",
+    "账号、付费、会员权限和云端分享"
+  ],
+  "legal_documents": {
+    "privacy": "docs/privacy_policy.v0.1.md",
+    "safety": "docs/safety_boundaries.v0.1.md",
+    "copyright": "docs/copyright_notice.v0.1.md",
+    "user_notice": "docs/user_notice.v0.1.md"
+  },
+  "monitoring_metrics": [
+    "session_count",
+    "completion_rate",
+    "mode_distribution",
+    "feedback_distribution",
+    "safety_block_count",
+    "high_risk_trigger_count",
+    "failed_interface_count",
+    "manual_review_count"
+  ],
+  "exit_conditions": [
+    "出现高风险现实建议漏拦截",
+    "出现伪造出处或无证据专业判断",
+    "出现版权 blocked 内容进入用户可见正文",
+    "Realtime 绕过本地排盘与解释工具",
+    "隐私删除请求无法处理"
+  ]
+}

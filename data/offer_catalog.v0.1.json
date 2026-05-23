@@ -1,0 +1,51 @@
+{
+  "catalog_id": "offer_catalog.v0.1",
+  "catalog_notice": "All offers are interest-only previews. They do not collect payment or unlock paid rights.",
+  "offers": [
+    {
+      "offer_id": "offer-free-v0",
+      "category": "free",
+      "title": "Free learning layer",
+      "summary": "Basic voice questions, term learning, limited chart attempts, and safety reminders.",
+      "interest_only": true,
+      "enabled_event_types": ["pricing_view", "offer_click"],
+      "safety_note": "Designed for traditional culture learning and entertainment only."
+    },
+    {
+      "offer_id": "offer-membership-v0",
+      "category": "membership",
+      "title": "Membership preview",
+      "summary": "Complete reports, more learning cards, case library, extended source cards, and richer persona expression.",
+      "interest_only": true,
+      "enabled_event_types": ["member_interest", "pricing_view", "offer_click"],
+      "safety_note": "The preview sells content organization and learning experience, not outcomes."
+    },
+    {
+      "offer_id": "offer-course-v0",
+      "category": "expert_course",
+      "title": "Expert and course preview",
+      "summary": "Authorized consultant courses, classic readings, and case livestream concepts.",
+      "interest_only": true,
+      "enabled_event_types": ["course_interest", "pricing_view", "offer_click"],
+      "safety_note": "All expert, likeness, voice, and course rights must be cleared before sale."
+    },
+    {
+      "offer_id": "offer-b2b-v0",
+      "category": "b2b",
+      "title": "B2B cultural event preview",
+      "summary": "Traditional culture installations for exhibitions, culture venues, bookstores, and travel scenes.",
+      "interest_only": true,
+      "enabled_event_types": ["business_interest", "offer_click"],
+      "safety_note": "Positioned as a culture experience, not a decision tool."
+    },
+    {
+      "offer_id": "offer-ip-v0",
+      "category": "ip_goods",
+      "title": "IP goods preview",
+      "summary": "Twelve generals cards, journals, stickers, and tabletop concept drafts.",
+      "interest_only": true,
+      "enabled_event_types": ["ip_interest", "offer_click"],
+      "safety_note": "Artwork, text, and voice material must be original or licensed."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "learning progress request",
+  "type": "object",
+  "properties": {
+    "visitor_id": {"type": "string"},
+    "node_id": {"type": "string"},
+    "event_type": {"type": "string"},
+    "status": {"type": "string"},
+    "mode": {"type": "string"},
+    "chart_id": {"type": "string"},
+    "source": {"type": "string"},
+    "reflection_note": {"type": "string"},
+    "content_id": {"type": "string"}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,11 @@
+.pytest_cache/
+.playwright-cli/
+.superpowers/
+Python/
+output/
+server-*.log
+server-*.err.log
+**/__pycache__/
+**/*.pyc
+tests/
+

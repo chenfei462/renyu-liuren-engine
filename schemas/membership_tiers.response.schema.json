@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Membership Tiers Response",
+  "type": "object",
+  "required": ["tiers_id", "tiers"],
+  "additionalProperties": true
+}

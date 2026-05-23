@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "share report request",
+  "type": "object",
+  "required": ["chart", "interpretation"],
+  "properties": {
+    "chart": {"type": "object"},
+    "interpretation": {"type": "object"}
+  },
+  "additionalProperties": false
+}

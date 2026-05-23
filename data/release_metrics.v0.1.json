@@ -1,0 +1,14 @@
+{
+  "metrics_id": "release_metrics.v0.1",
+  "release_id": "release_config.v0.1",
+  "session_count": 0,
+  "completion_count": 0,
+  "completion_rate": 0,
+  "feedback_count": 0,
+  "mode_distribution": {},
+  "feedback_distribution": {},
+  "safety_block_count": 0,
+  "high_risk_trigger_count": 0,
+  "failed_interface_count": 0,
+  "manual_review_count": 0
+}

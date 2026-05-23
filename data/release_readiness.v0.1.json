@@ -1,0 +1,16 @@
+{
+  "readiness_id": "release_readiness.v0.1",
+  "release_id": "release_config.v0.1",
+  "release_status": "initial",
+  "blocked_reasons": [],
+  "allowed_for_mvp": {
+    "modes": ["professional", "plain", "story", "mentor"],
+    "categories": ["Q-001", "Q-002", "Q-004", "Q-005", "Q-013", "Q-014", "Q-015"]
+  },
+  "blocked_for_mvp": {
+    "categories": ["Q-009", "Q-010", "Q-011", "Q-012"]
+  },
+  "needs_expert_review": {
+    "rules": ["biyong", "shehai", "yaoke", "maoxing", "bazhuan", "bieze", "fuyin", "fanyin"]
+  }
+}

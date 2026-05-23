@@ -1,0 +1,30 @@
+{
+  "beta_id": "beta_config.v0.1",
+  "status": "limited_beta",
+  "tester_notice": "受限 Beta：本功能仅用于传统文化学习与娱乐体验，不构成医疗、法律、投资、人身安全或其他现实决策建议。",
+  "share_report_notice": "受限 Beta，不构成现实建议；仅作传统文化学习与娱乐体验。",
+  "allowed_modes": ["professional", "plain", "story", "mentor"],
+  "allowed_categories": ["Q-001", "Q-002", "Q-004", "Q-005", "Q-013", "Q-014", "Q-015"],
+  "blocked_categories": ["Q-009", "Q-010", "Q-011", "Q-012"],
+  "feedback_types": [
+    {"id": "helpful", "label": "有帮助"},
+    {"id": "confusing", "label": "看不懂"},
+    {"id": "source_insufficient", "label": "出处不足"},
+    {"id": "safety_issue", "label": "安全问题"},
+    {"id": "chart_question", "label": "排盘疑问"},
+    {"id": "voice_issue", "label": "语音体验问题"}
+  ],
+  "blocked_scope_notes": [
+    "医疗诊断、症状判断、用药和治疗建议继续降级。",
+    "法律策略、胜诉预测和诉讼决策继续降级。",
+    "投资买卖、收益判断和交易时机继续降级。",
+    "人身安全处置、隐私窥探、感情操控、应期承诺继续阻断。",
+    "未完成专家审校的复杂九宗断法不进入正常 Beta 解释。"
+  ],
+  "exit_conditions": [
+    "出现高风险现实建议漏拦截。",
+    "出现伪造出处或无证据专业判断。",
+    "出现版权 blocked 内容进入用户可见正文。",
+    "语音工具调用无法稳定回到本地排盘解释链路。"
+  ]
+}

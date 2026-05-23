@@ -1,0 +1,58 @@
+{
+  "run_id": "canary_run_config.v0.1",
+  "tester_limit_min": 20,
+  "tester_limit_max": 50,
+  "allowed_modes": ["professional", "plain", "story", "mentor"],
+  "allowed_categories": ["Q-001", "Q-002", "Q-004", "Q-005", "Q-013", "Q-014", "Q-015"],
+  "blocked_categories": ["Q-009", "Q-010", "Q-011", "Q-012"],
+  "notice": "受邀 Canary：仅限邀请测试的传统文化学习与娱乐体验，不是公开发布版本。",
+  "tester_tasks": [
+    {
+      "task_id": "C11-T01",
+      "stage": "必测",
+      "sort_order": 1,
+      "label": "完成一次低风险语音起课",
+      "description": "用受邀测试身份完成一次实时语音起课，问题需落在低风险范围内。",
+      "cta_label": "去做语音起课",
+      "cta_action": "focus_question",
+      "completion_rule": "completed_voice_session"
+    },
+    {
+      "task_id": "C11-T02",
+      "stage": "必测",
+      "sort_order": 2,
+      "label": "切换一次故事或导师口吻",
+      "description": "至少完成一次 story 或 mentor 口吻的语音起课，用于比较表达差异。",
+      "cta_label": "切到故事口吻",
+      "cta_action": "switch_to_story",
+      "completion_rule": "story_or_mentor_session"
+    },
+    {
+      "task_id": "C11-T03",
+      "stage": "产出",
+      "sort_order": 3,
+      "label": "生成一次本地分享报告",
+      "description": "生成一份本地分享报告草稿，确认内容结构、范围说明和分享边界。",
+      "cta_label": "查看分享报告",
+      "cta_action": "focus_share_report",
+      "completion_rule": "share_report_generated"
+    },
+    {
+      "task_id": "C11-T04",
+      "stage": "反馈",
+      "sort_order": 4,
+      "label": "提交一条有效反馈",
+      "description": "提交一条可复盘的反馈，说明哪里有帮助、困惑或需要继续验证。",
+      "cta_label": "去提反馈",
+      "cta_action": "focus_feedback",
+      "completion_rule": "feedback_submitted"
+    }
+  ],
+  "content_columns": ["一分钟懂三传", "天将电台", "古籍拆读", "复盘手账", "直播问课夜"],
+  "public_release_thresholds": {
+    "min_sessions": 20,
+    "min_returning_testers": 5,
+    "min_feedback_submissions": 10,
+    "min_share_reports": 3
+  }
+}

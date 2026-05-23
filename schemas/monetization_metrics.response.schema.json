@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "monetization metrics response",
+  "type": "object",
+  "required": ["metrics_id", "event_count", "business_lead_count", "interest_summary"],
+  "properties": {
+    "metrics_id": {"type": "string", "const": "monetization_metrics.v0.1"},
+    "event_count": {"type": "integer"},
+    "business_lead_count": {"type": "integer"},
+    "unique_visitor_count": {"type": "integer"},
+    "returning_visitor_count": {"type": "integer"},
+    "member_interest_count": {"type": "integer"},
+    "course_interest_count": {"type": "integer"},
+    "business_interest_count": {"type": "integer"},
+    "ip_interest_count": {"type": "integer"},
+    "interest_summary": {"type": "object"}
+  },
+  "additionalProperties": true
+}

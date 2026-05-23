@@ -1,0 +1,86 @@
+{
+  "path_id": "learning_path.v0.1",
+  "title": "RenYu learning path v0.1",
+  "nodes": [
+    {
+      "node_id": "LP-FOUR-001",
+      "topic": "four_lessons",
+      "title": "Four lessons as chart structure",
+      "learning_card_ids": ["LC-001"],
+      "source_ids": ["RC-013", "RC-014", "RC-015"],
+      "example_case_ids": ["GC-001"],
+      "review_status": "approved_for_mvp",
+      "unlocked_outputs": ["learning_note", "mentor_explanation"]
+    },
+    {
+      "node_id": "LP-THREE-001",
+      "topic": "three_transmissions",
+      "title": "Initial, middle, and final transmissions",
+      "learning_card_ids": ["LC-002"],
+      "source_ids": ["RC-044", "RC-045", "RC-048"],
+      "example_case_ids": ["GC-044"],
+      "review_status": "approved_for_mvp",
+      "unlocked_outputs": ["learning_note", "mentor_explanation"]
+    },
+    {
+      "node_id": "LP-NINE-001",
+      "topic": "nine_rules",
+      "title": "Nine transmission methods review track",
+      "learning_card_ids": ["LC-003"],
+      "source_ids": ["RC-060", "RC-061", "RC-062"],
+      "example_case_ids": ["GC-060"],
+      "review_status": "research_only",
+      "unlocked_outputs": ["research_note", "source_card"]
+    },
+    {
+      "node_id": "LP-GENERALS-001",
+      "topic": "generals",
+      "title": "Twelve generals as symbolic roles",
+      "learning_card_ids": ["LC-004"],
+      "source_ids": ["RC-070", "RC-071", "RC-072"],
+      "example_case_ids": ["GC-070"],
+      "review_status": "approved_for_mvp",
+      "unlocked_outputs": ["learning_note", "story_mode_context"]
+    },
+    {
+      "node_id": "LP-SHENSHA-001",
+      "topic": "shensha",
+      "title": "Auxiliary shensha labels",
+      "learning_card_ids": ["LC-005"],
+      "source_ids": ["RC-080", "RC-081"],
+      "example_case_ids": ["GC-080"],
+      "review_status": "approved_for_mvp",
+      "unlocked_outputs": ["learning_note", "safety_note"]
+    },
+    {
+      "node_id": "LP-SYMBOLS-001",
+      "topic": "classical_symbols",
+      "title": "Classical symbols and question category",
+      "learning_card_ids": ["LC-006"],
+      "source_ids": ["RC-090", "RC-091"],
+      "example_case_ids": ["GC-090"],
+      "review_status": "approved_for_mvp",
+      "unlocked_outputs": ["learning_note", "category_hint"]
+    },
+    {
+      "node_id": "LP-SAFETY-001",
+      "topic": "safety_boundary",
+      "title": "Safety boundaries before interpretation",
+      "learning_card_ids": ["LC-007"],
+      "source_ids": ["RC-102", "RC-103"],
+      "example_case_ids": ["GC-102"],
+      "review_status": "approved_for_mvp",
+      "unlocked_outputs": ["safety_note", "reflection_prompt"]
+    },
+    {
+      "node_id": "LP-REPORT-001",
+      "topic": "report_export",
+      "title": "Local share and PDF report draft",
+      "learning_card_ids": ["LC-008"],
+      "source_ids": ["RC-104"],
+      "example_case_ids": ["GC-104"],
+      "review_status": "approved_for_mvp",
+      "unlocked_outputs": ["local_report", "pdf_report_draft"]
+    }
+  ]
+}

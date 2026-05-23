@@ -1,0 +1,11 @@
+{
+  "config_id": "monetization_config.v0.1",
+  "experiment_enabled": true,
+  "gate_statuses": ["blocked", "experiment", "paused"],
+  "payments_enabled": false,
+  "membership_entitlements_enabled": false,
+  "enabled_experiments": ["offer_interest", "member_interest", "course_interest", "business_lead", "ip_interest"],
+  "allowed_event_types": ["member_interest", "course_interest", "business_interest", "ip_interest", "pricing_view", "offer_click"],
+  "commercial_notice": "Interest-only monetization experiment. No payment, membership entitlement, or real-world outcome promise is enabled.",
+  "purchase_boundary": "Users would buy content organization, learning experience, and report capability, not outcomes."
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "canary run config response",
+  "type": "object",
+  "required": ["run_id", "tester_limit_min", "tester_limit_max", "allowed_modes", "tester_tasks"],
+  "properties": {
+    "run_id": {"type": "string", "const": "canary_run_config.v0.1"},
+    "tester_limit_min": {"type": "integer"},
+    "tester_limit_max": {"type": "integer"},
+    "allowed_modes": {"type": "array", "items": {"type": "string"}},
+    "allowed_categories": {"type": "array", "items": {"type": "string"}},
+    "blocked_categories": {"type": "array", "items": {"type": "string"}},
+    "notice": {"type": "string"},
+    "tester_tasks": {"type": "array", "items": {"type": "object"}},
+    "public_release_thresholds": {"type": "object"}
+  },
+  "additionalProperties": true
+}

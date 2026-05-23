@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "business lead request",
+  "type": "object",
+  "properties": {
+    "visitor_id": {"type": "string"},
+    "contact_nickname": {"type": "string"},
+    "channel": {"type": "string"},
+    "need_summary": {"type": "string"},
+    "source": {"type": "string"},
+    "offer_id": {"type": "string"},
+    "delete_request": {"type": "boolean"}
+  },
+  "additionalProperties": true
+}

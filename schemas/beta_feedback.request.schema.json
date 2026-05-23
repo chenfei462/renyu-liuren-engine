@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "beta feedback request",
+  "type": "object",
+  "required": ["tester_id", "chart_id", "mode", "feedback_type"],
+  "properties": {
+    "tester_id": {"type": "string"},
+    "chart_id": {"type": "string"},
+    "mode": {"type": "string", "enum": ["professional", "plain", "story", "mentor"]},
+    "category": {"type": ["string", "null"]},
+    "safety_action": {"type": ["string", "null"]},
+    "blocked_reasons": {"type": "array", "items": {"type": "string"}},
+    "feedback_type": {
+      "type": "string",
+      "enum": ["helpful", "confusing", "source_insufficient", "safety_issue", "chart_question", "voice_issue"]
+    },
+    "note": {"type": "string"},
+    "feedback_token": {"type": ["string", "null"]},
+    "beta_scope_status": {"type": ["string", "null"]}
+  },
+  "additionalProperties": true
+}

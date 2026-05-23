@@ -1,0 +1,2 @@
+{"record_type":"seed","note":"Phase 9 local ops event JSONL. Seed row is ignored by loader."}
+{"event_id": "ops_1873189", "event_type": "api_smoke", "severity": "P3", "source": "local_api", "summary": "api smoke", "timestamp": "2026-05-04T08:40:35Z"}

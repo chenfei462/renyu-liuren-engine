@@ -1,0 +1,20 @@
+{
+  "checklist_id": "launch_checklist.v0.1",
+  "release_id": "release_config.v0.1",
+  "commands": [
+    "python -m unittest tests.test_phase10_growth -v",
+    "python -m unittest discover -s tests -v",
+    "python -m compileall -q src tests scripts",
+    "node --check static\\realtime\\app.js",
+    "python scripts\\launch_check.py",
+    "Get-ChildItem -Path src,static,schemas,tests,docs -Recurse -File | Select-String -Pattern 'TODO|NotImplemented|pass #|占位|placeholder'"
+  ],
+  "checks": [
+    {"check_id": "golden_cases", "description": "100 个 golden cases 继续通过"},
+    {"check_id": "evidence_coverage", "description": "专业版出处覆盖率继续不低于 0.8"},
+    {"check_id": "red_team", "description": "高风险、隐私、操控和伪造出处红队样例继续通过"},
+    {"check_id": "safety_word_scan", "description": "用户可见输出不包含确定性承诺词"},
+    {"check_id": "copyright_blocked_scan", "description": "版权 blocked 内容不得进入用户可见正文"},
+    {"check_id": "release_readiness", "description": "发布准入状态必须由 Beta、审校、版权和红队结果决定"}
+  ]
+}
